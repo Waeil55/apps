@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Evenhand Support</title>
-<meta name="description" content="Help with Evenhand: inviting your co-parent, messages, the calendar, expenses, records, subscriptions and hardship waivers.">
+<meta name="description" content="Help with Evenhand: getting started, the journal, recording schedule changes, the expense balance, exports and deleting your data.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -71,49 +71,45 @@ footer a{color:var(--muted);margin-right:16px}
 </header>
 <main>
   <h1>Support</h1>
-  <p class="meta">Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. A real person answers within 2 business days.</p>
+  <p class="meta">Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. A real person answers within 2 business days. Please don't email your records: we never need them to help you.</p>
 
   <div class="callout">
-    <p>If you or your children are in danger, contact local emergency services now. Evenhand does not monitor messages or alert anyone.</p>
+    <p>If you or your children are in danger, contact local emergency services now. Evenhand is not an emergency service and does not alert anyone.</p>
   </div>
 
   <h2>Getting started</h2>
-  <details><summary>How do I invite my co-parent?</summary>
-    <p>Open More › Family &amp; invite and tap Share invite. Send the link privately, for example by text or email. Your co-parent installs Evenhand, chooses "I have an invite from my co-parent" and opens or pastes the link. The link works once and expires after 14 days.</p></details>
-  <details><summary>Why shouldn't I post the invite link publicly?</summary>
-    <p>The link carries the key that encrypts your family's sensitive records. Anyone with an unused link could join in your co-parent's place, so share it only with them.</p></details>
-  <details><summary>Does my co-parent have to pay?</summary>
-    <p>No. Everyone can use messaging, the calendar, swaps, expenses and the children's card for free. If either parent subscribes to Plus, it covers both of you.</p></details>
+  <details><summary>Do I need an account?</summary>
+    <p>No. Tap Get started, enter your name, the other parent's name if you like (it is only a label) and your children's names. Everything stays on your phone.</p></details>
+  <details><summary>Does the other parent see what I enter?</summary>
+    <p>No. Evenhand 1.0 doesn't send anything to anyone. If you want someone to see a record, export it from More › Records &amp; export and choose where to send it.</p></details>
+  <details><summary>Does it cost anything?</summary>
+    <p>No. Version 1.0 is free, with every feature included. There are no subscriptions, in-app purchases or ads.</p></details>
 
-  <h2>Messages and records</h2>
-  <details><summary>Can I edit or delete a message?</summary>
-    <p>No, and neither can your co-parent or we. That's what makes the record trustworthy. If you made a mistake, send a short correction.</p></details>
+  <h2>Journal and records</h2>
+  <details><summary>Can I edit or delete a journal entry?</summary>
+    <p>No. Each entry is sealed when you save it, which is what makes the journal trustworthy. If you made a mistake, add a short correction as a new entry.</p></details>
   <details><summary>What does "chain intact" mean?</summary>
-    <p>Each message carries a SHA-256 hash of its contents and of the message before it. Your phone recomputes every hash. "Intact" means no stored message has been changed, removed or reordered since it was sent.</p></details>
+    <p>Each entry carries a SHA-256 hash of its contents and of the entry before it. Your phone recomputes every hash. "Intact" means no stored entry has been changed, removed or reordered since it was saved.</p></details>
   <details><summary>How can someone else check an exported record?</summary>
-    <p>Each message hash is SHA-256 of <code>evenhand-msg-v1|family id|sequence|sender id|server time|SHA-256 of message text|previous hash</code>. The first message's previous hash is 64 zeros. Anyone can recompute these with a standard SHA-256 tool, using the values printed in the PDF or the JSON export. The export digest is SHA-256 of the exported records in canonical JSON.</p></details>
+    <p>Each entry hash is SHA-256 of <code>evenhand-msg-v1|space id|entry number|author id|time sealed|SHA-256 of entry text|previous hash</code>. The first entry's previous hash is 64 zeros. Anyone can recompute these with a standard SHA-256 tool, using the values printed in the PDF or the JSON export. The export digest is SHA-256 of the exported records in canonical JSON.</p></details>
   <details><summary>Will a court accept Evenhand records?</summary>
     <p>We can't promise that, and nobody else honestly can either. Evenhand keeps factual, time-stamped records with integrity hashes and makes them easy to export. Whether and how they are used is up to the people and courts involved. Please ask your lawyer.</p></details>
 
   <h2>Calendar and expenses</h2>
-  <details><summary>How do swaps work?</summary>
-    <p>Pick the days on the calendar and send a request with a reason. Your co-parent approves or declines it once, and you can withdraw it until then. Approved swaps show on both calendars, and every request stays in Swap history.</p></details>
-  <details><summary>How do reimbursements work?</summary>
-    <p>Log an expense with the share you agreed (50% by default) and request reimbursement. Your co-parent marks it paid once they have paid you some other way. Evenhand doesn't move money. They can also decline with a note.</p></details>
-
-  <h2>Subscriptions</h2>
-  <details><summary>How do I cancel?</summary>
-    <p>On iPhone, go to Settings › your name › Subscriptions › Evenhand. On Android, go to Google Play › Payments &amp; subscriptions › Subscriptions. Plus stays on until the end of the period you paid for, and your records always stay.</p></details>
-  <details><summary>Restoring a purchase on a new phone</summary>
-    <p>Sign in, then tap Settings › Restore purchases.</p></details>
-  <details id="hardship"><summary>Hardship waiver</summary>
-    <p>If cost is what's stopping you from using Plus, for example for PDF records, email <a href="mailto:wael.rooma@gmail.com?subject=Hardship%20waiver">wael.rooma@gmail.com</a> with the subject "Hardship waiver". No documents are needed. We review every request.</p></details>
+  <details><summary>How do I record a change to the schedule?</summary>
+    <p>When you and the other parent agree to change days, open Calendar, pick a day and tap Record a change. Choose the days and who has the children, and add a note if you like. The change shows on your calendar straight away. If it falls through, open it and tap Cancel this change: it stays in the history, marked as cancelled.</p></details>
+  <details><summary>How does the expense balance work?</summary>
+    <p>Log an expense with the share you agreed (50% by default). Evenhand adds the other parent's share to a running balance. When it has been paid outside the app, open the expense and tap Mark as settled. Evenhand doesn't move money.</p></details>
 
   <h2>Your data</h2>
+  <details><summary>Where is my data stored?</summary>
+    <p>Only on your phone, in the app's private storage. We don't run a server for Evenhand 1.0 and never receive your records.</p></details>
   <details><summary>Export everything</summary>
-    <p>Go to Settings › Export my data, or Records › All data (JSON). This is free, always.</p></details>
-  <details><summary>Delete my account</summary>
-    <p>Email us from the address you sign in with. We'll delete your account and personal data. Records you shared stay in your co-parent's copy, as the <a href="/privacy">Privacy Policy</a> explains.</p></details>
+    <p>Go to Settings › Export all data, or More › Records &amp; export › All data (JSON). PDF records are on the same Records screen.</p></details>
+  <details><summary>Moving to a new phone</summary>
+    <p>Your records live on this phone, so keep regular exports. Your phone's own backup (iCloud Backup or Google backup) may also include the app's data if you have it turned on.</p></details>
+  <details><summary>Delete everything</summary>
+    <p>Go to Settings › Delete all data. This erases your journal, calendar, agreed changes, expenses, receipt photos and children's details from the app. There is no other copy, so it can't be undone. We can't delete or recover anything for you, because we never had it.</p></details>
 </main>
 <footer>
   <p><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></p>

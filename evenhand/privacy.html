@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Evenhand Privacy Policy</title>
-<meta name="description" content="How Evenhand handles your family records: encrypted sensitive fields, no ads, no tracking, and no data selling.">
+<meta name="description" content="How Evenhand handles your records: everything stays on your phone. No account, no server, no ads, no tracking.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -71,79 +71,71 @@ footer a{color:var(--muted);margin-right:16px}
 </header>
 <main>
   <h1>Privacy Policy</h1><aside style="border:1px solid #b9d8cf;background:#eef7f4;color:#14342c;border-radius:10px;padding:12px 16px;margin:16px 0"><strong>Version 1.0 is free.</strong> Evenhand currently has no in-app purchases, subscriptions or ads, so no payment or purchase data is processed and the purchase sections below do not apply yet. If paid features are added in a later version, this page will be updated before they launch.</aside>
-  <p class="meta">Effective 13 November 2026 · Applies to the Evenhand app for iPhone, iPad and Android</p>
+  <p class="meta">Effective 13 November 2026 · Applies to Evenhand version 1.0 for iPhone, iPad and Android</p>
 
   <div class="summary">
     <h2>The short version</h2>
     <ul>
-      <li>Evenhand stores the records you and your co-parent create (messages, calendar, expenses, your children's details) so both of you can see them on your phones.</li>
-      <li>The most sensitive parts, including message text and your children's health and insurance details, are <strong>encrypted on your phone</strong> with a key we never receive.</li>
-      <li>No ads, no advertising IDs, no tracking across apps or websites, and no third-party analytics.</li>
-      <li>We do not sell or rent your data, and we never will.</li>
-      <li>Records are shared between two parents. Something you send to your co-parent stays in their copy of the record, even if you leave.</li>
+      <li>Everything you enter in Evenhand (your journal, the custody calendar, agreed changes, expenses, receipt photos and your children's details) is <strong>kept only on your phone</strong>, in the app's private storage.</li>
+      <li>There is no account and no sign-in. Evenhand 1.0 has no server, and nothing you enter is sent to us or to anyone else.</li>
+      <li>No ads, no advertising IDs, no tracking, no analytics and no crash reporting.</li>
+      <li>You decide what to export and where it goes, using your phone's share sheet.</li>
+      <li>Settings › Delete all data, or deleting the app, erases your records. We have no copy, so we can't recover them.</li>
     </ul>
   </div>
 
   <h2>Who we are</h2>
   <p>Evenhand is provided by Waeil Mikhaeil ("we", "us"). Contact us at <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a> with any privacy question.</p>
 
-  <h2>What we collect and why</h2>
+  <h2>What the app keeps, and where</h2>
+  <p>Evenhand stores what you enter so the app can show it back to you. All of it stays in the app's storage on your phone. None of it reaches us.</p>
   <div class="table-wrap"><table>
-    <thead><tr><th>Data</th><th>Why</th><th>Encrypted on your phone before it reaches us?</th></tr></thead>
+    <thead><tr><th>Data</th><th>Why</th><th>Where it is kept</th></tr></thead>
     <tbody>
-      <tr><td>Sign-in details: your email address, or the private relay address from Sign in with Apple or Google</td><td>To create your account and let you sign in on a new phone</td><td>No (needed to sign you in)</td></tr>
-      <tr><td>Display name, family name, your role in the family</td><td>So your co-parent sees who wrote what</td><td>No</td></tr>
-      <tr><td>Message text</td><td>To deliver messages between the two parents</td><td><strong>Yes</strong></td></tr>
-      <tr><td>Message order, server timestamps, read receipts, integrity hashes</td><td>To keep a tamper-evident, time-ordered record</td><td>No (the record depends on them)</td></tr>
-      <tr><td>Custody schedule, calendar dates and event titles</td><td>To show both parents the same calendar</td><td>No</td></tr>
-      <tr><td>Event notes, swap reasons and the notes on swap decisions</td><td>Context for each request</td><td><strong>Yes</strong></td></tr>
-      <tr><td>Expense amounts, dates, categories and agreed shares</td><td>To work out who owes what</td><td>No</td></tr>
-      <tr><td>Expense descriptions, reimbursement notes, receipt photos</td><td>Context and proof for each expense</td><td><strong>Yes</strong></td></tr>
-      <tr><td>Children's names, birthdays and school details</td><td>The shared children's card</td><td>No</td></tr>
-      <tr><td>Children's doctor, dentist, allergies, medications, insurance and notes</td><td>The shared children's card</td><td><strong>Yes</strong></td></tr>
-      <tr><td>Subscription status</td><td>To turn Evenhand Plus on for your family</td><td>No</td></tr>
+      <tr><td>Your name, and the name you give the other parent</td><td>To label custody days, expenses and your records</td><td>On your phone only</td></tr>
+      <tr><td>Children's names, birthdays, school, doctor, dentist, allergies, medications, insurance and notes</td><td>The children's card, with every edit kept as a version</td><td>On your phone only</td></tr>
+      <tr><td>Custody schedule, events and the changes you record</td><td>To show who has the children each day</td><td>On your phone only</td></tr>
+      <tr><td>Journal entries, the time each was saved and its integrity hash</td><td>A dated journal that can't be edited later</td><td>On your phone only</td></tr>
+      <tr><td>Expenses, agreed splits, settlements and notes</td><td>To keep a running balance of what is owed</td><td>On your phone only</td></tr>
+      <tr><td>Receipt photos you attach</td><td>Proof for an expense. The photo is copied into the app's storage</td><td>On your phone only</td></tr>
+      <tr><td>Preferences such as the theme and the tone check</td><td>To remember your settings</td><td>On your phone only</td></tr>
     </tbody>
   </table></div>
+  <p>The tone check and the integrity hashes (SHA-256) are computed on your phone. The app asks for access to your photos or camera only when you choose to attach a receipt, and you can say no.</p>
 
-  <h3>How the encryption works</h3>
-  <p>When a family is created, the app makes a random encryption key on the parent's phone. The key reaches the other parent only inside the invite link the first parent shares. Our servers never receive it. Encrypted fields use XChaCha20-Poly1305 and are unreadable to us and to our hosting provider.</p>
-  <p>One trade-off: so that anyone can check a record later, each message's integrity hash is computed from the message text. The server stores that hash. A hash does not reveal the text, but someone who already knows the exact wording of a message could confirm that it was sent.</p>
+  <h2>What leaves your phone</h2>
+  <p>Nothing, unless you export it. When you export records (More › Records &amp; export, or Settings › Export all data), Evenhand creates a PDF or JSON file on your phone and opens the share sheet. You choose where the file goes, for example to your files, to the other parent, a mediator or a lawyer. Once you share a file, the app or service you send it with handles it under its own terms.</p>
+  <p>Your phone's own backup (for example iCloud Backup or Google backup), if you have it turned on, may include the app's data under Apple's or Google's terms. We never receive those backups.</p>
 
   <h2>Who processes data for us</h2>
-  <ul>
-    <li><strong>Supabase</strong> hosts the database, sign-in and file storage, in the United States (East) region. It acts only on our instructions.</li>
-    <li><strong>RevenueCat</strong> checks whether your family's subscription is active. It receives a random user ID, purchase records from Apple or Google, and basic technical data. It never receives your messages or family records.</li>
-    <li><strong>Apple and Google</strong> handle payments. We never see your card details.</li>
-    <li><strong>Crash reporting:</strong> this version does not send crash reports. If we turn it on later, we will update this policy first, and reports will contain technical diagnostics only, never your records.</li>
-  </ul>
+  <p>No one. Evenhand 1.0 does not use a hosting provider, a sign-in service, a subscription service, analytics or crash reporting, so no third party receives your records or information about how you use the app. Version 1.0 is free and has no in-app purchases.</p>
 
   <h2>What we don't do</h2>
   <ul>
     <li>We don't use advertising SDKs, advertising IDs or tracking pixels.</li>
-    <li>We don't read, scan or moderate your messages. Evenhand does not monitor conversations or alert anyone. If you or your children are in danger, contact local emergency services.</li>
-    <li>We don't use your records to train AI models. The tone check runs entirely on your phone.</li>
-    <li>We don't sell, rent or share your data for marketing.</li>
+    <li>We don't see, read or monitor anything you write. Evenhand is not an emergency service and does not alert anyone. If you or your children are in danger, contact local emergency services.</li>
+    <li>We don't use your records to train AI models.</li>
+    <li>We don't sell, rent or share data, because we don't have any of it.</li>
   </ul>
 
-  <h2>Sharing with your co-parent</h2>
-  <p>Evenhand is a shared space for exactly two parents. Everything in the family (messages, calendar, swaps, expenses and the children's card) is visible to both of you. This is how the app works, and you can't make it private from the other parent.</p>
-
   <h2>Requests from courts, lawyers and authorities</h2>
-  <p>We give data to a third party only when the law requires it, for example a valid court order or subpoena. Encrypted fields stay encrypted, because we do not have the key. Where the law allows, we will tell you about the request first. Parents can export their own records at any time from the app.</p>
+  <p>We don't hold your records, so we have nothing to hand over. Any export of your records is made by you, from the app.</p>
 
-  <h2>How long we keep data</h2>
-  <p>Records are kept while the family exists, so both parents keep an unchanged history. If you leave a family, your account is closed, but messages and records you created stay in your co-parent's copy, because removing them would change their record. Once both parents have deleted their accounts, we delete the family's records within 30 days, and they leave our backups within a further 35 days.</p>
+  <h2>How long data is kept, and deleting it</h2>
+  <p>Your records stay on your phone until you delete them. Settings › Delete all data erases the journal, calendar, agreed changes, expenses, receipt photos, children's details and preferences from the app. Deleting the app does the same. There is no other copy, so this can't be undone. Export your data first if you want to keep a copy.</p>
+  <p>Because your data only exists on your phone, a lost, reset or replaced phone means the records are gone unless you kept an export or a device backup.</p>
 
   <h2>Your rights</h2>
-  <p>Depending on where you live (for example under GDPR, UK GDPR or US state privacy laws), you may have the right to access, correct, export or delete your personal data, and to object to or restrict processing. You can export your records yourself in the app (Settings › Export my data). For other requests, email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. We will answer within 30 days.</p>
-  <p>Deletion has one limit. Records you sent to your co-parent also belong to their record. We will delete your account and personal data, but the messages and entries you shared stay in your co-parent's history, under your display name.</p>
-  <p>If you're in the EEA or UK, our legal basis is performance of our contract with you, to provide the service, and our legitimate interest in keeping records intact and secure. You can complain to your local data protection authority.</p>
+  <p>Depending on where you live (for example under GDPR, UK GDPR or US state privacy laws), you may have the right to access, correct, export or delete your personal data. You can do all of that yourself in the app: view and edit your records, export them (Settings › Export all data) and delete them (Settings › Delete all data). We hold no personal data from the app about you. If you email us for support, we use your email address and message only to reply, and you can ask us to delete that correspondence.</p>
 
   <h2>Children</h2>
-  <p>Evenhand is for parents and guardians aged 18 or older. Children don't use the app. Parents enter information about their children, and that information is protected as described above.</p>
+  <p>Evenhand is for parents and guardians aged 18 or older. Children don't use the app. Parents enter information about their children, and it stays on the parent's phone as described above.</p>
 
   <h2>Security</h2>
-  <p>We use encryption in transit (TLS) and at rest. We also encrypt sensitive fields on the device, use row-level access rules that let only the two members of a family read its records, and use database rules that block editing or deleting sent messages. No system is perfectly secure. If a breach affects you, we will tell you as the law requires.</p>
+  <p>Your records are protected by your phone's own security: the app's private storage, your device's encryption and your passcode, Face ID or fingerprint. Anyone who can unlock your phone and open the app can read your records, so keep a passcode on your phone. Journal entries carry integrity hashes, so any change to the stored journal shows up when it is checked.</p>
+
+  <h2>Future versions</h2>
+  <p>If a later version offers optional sharing between two parents, it will be something you choose to turn on, and we will update this policy, explaining what is stored and where, before it is available.</p>
 
   <h2>Changes</h2>
   <p>If we change this policy, we will update the effective date and tell you in the app before material changes take effect.</p>
