@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gambit Garden Terms of Use</title>
+<meta name="description" content="Terms of use for the Gambit Garden board game and the one-time Gambit Garden Premium purchase.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317291F'/%3E%3Crect x='5' y='5' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Crect x='17' y='5' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Crect x='5' y='17' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Crect x='17' y='17' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Ccircle cx='10' cy='10' r='3.6' fill='%235A6FD1'/%3E%3Ccircle cx='22' cy='22' r='3.6' fill='%235A6FD1'/%3E%3Crect x='19.5' y='7.5' width='5' height='5' rx='1' transform='rotate(45 22 10)' fill='%23E39A3E'/%3E%3Crect x='7.5' y='19.5' width='5' height='5' rx='1' transform='rotate(45 10 22)' fill='%23E39A3E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#EEF0EA;--surface:#FFFFFF;--surface-2:#E3E7DF;
+  --ink:#18211B;--ink-2:#34413A;--muted:#56635A;
+  --accent:#2E5D45;--gold:#3A4FAE;--gold-soft:#D6E6DA;
+  --line:#D2D8CC;--focus:#2E5D45;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1411;--surface:#172019;--surface-2:#1F2922;
+  --ink:#E9EEE8;--ink-2:#C5CFC7;--muted:#97A49A;
+  --accent:#8CCBA6;--gold:#A4B3F7;--gold-soft:#1F3A2C;
+  --line:#2A352F;--focus:#8CCBA6;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1411;--surface:#172019;--surface-2:#1F2922;
+  --ink:#E9EEE8;--ink-2:#C5CFC7;--muted:#97A49A;
+  --accent:#8CCBA6;--gold:#A4B3F7;--gold-soft:#1F3A2C;
+  --line:#2A352F;--focus:#8CCBA6;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.tile{width:30px;height:30px;border-radius:9px;background:#C9D3C0;display:inline-grid;grid-template-columns:1fr 1fr;gap:2px;padding:3px}
+.tile i{border-radius:4px;background:#F6F7F1;position:relative}
+.tile i::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#5A6FD1}
+.tile i.m::after{border-radius:2px;transform:rotate(45deg) scale(.8);background:#E39A3E}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--gold-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="tile" aria-hidden="true"><i></i><i class="m"></i><i class="m"></i><i></i></span>Gambit Garden</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Terms of Use</h1>
+<p class="meta">Effective 13 November 2026 · Applies to the Gambit Garden game for iPhone, iPad and Android</p>
+
+<p>These terms are an agreement between you and Wael Rooma ("we", "us") about your use of Gambit Garden. By downloading or playing Gambit Garden, you agree to them. If you download it from the App Store, Apple's standard Licensed Application End User License Agreement also applies. Where the two conflict, these terms apply as far as the law allows.</p>
+
+<h2>1. The game</h2>
+<p>Gambit Garden is a board game for one player against the computer, or two players sharing one device. It has no gambling, no wagering and no prizes of any value. We give you a personal, non-exclusive, non-transferable and revocable licence to use it for personal, non-commercial entertainment on devices you own or control.</p>
+
+<h2>2. Gambit Garden Premium</h2>
+<ul>
+  <li>Gambit Garden Premium is an optional one-time purchase, not a subscription. It unlocks the Oak and Elder opponents, the Orchard and Cloister gardens and unlimited hints, as described in the app.</li>
+  <li>Apple or Google processes the payment under their own terms. Refunds are handled by them under their own policies.</li>
+  <li>The purchase gives you a licence to the unlocked content. It has no cash value and you cannot transfer or exchange it.</li>
+  <li>You can restore the purchase on other devices that use the same store account with Restore Purchases in the app.</li>
+  <li>Games against Sprout and Shrub, pass and play and the Courtyard garden stay free. We may add, change or rebalance game content over time. While we keep offering the game, we will not remove the main features you paid for.</li>
+</ul>
+
+<h2>3. Acceptable use</h2>
+<p>Don't reverse engineer, modify or redistribute the app, except where the law allows it. Don't use it to break any law, and don't try to get around the purchase checks.</p>
+
+<h2>4. Your progress</h2>
+<p>Your progress is stored only on your device. If your device is lost or the app is deleted, we can't recover your progress unless your own device backup includes it.</p>
+
+<h2>5. Intellectual property</h2>
+<p>We or our licensors own the Gambit Garden name, game design, art, sounds and software. Fonts (Manrope and Inter) are used under the SIL Open Font License.</p>
+
+<h2>6. Disclaimers</h2>
+<p>Gambit Garden is provided "as is" and "as available". To the extent the law allows, we disclaim all warranties, express or implied, including fitness for a particular purpose and non-infringement. We do not promise that the game will run without interruption or errors.</p>
+
+<h2>7. Limitation of liability</h2>
+<p>To the extent the law allows, our total liability arising from Gambit Garden is limited to the amount you paid for the app and in-app purchases in the twelve months before the claim. We are not liable for indirect or consequential losses. Nothing in these terms limits liability that the law does not allow us to limit, such as liability for death or personal injury caused by negligence, or for fraud. If you are a consumer, nothing in these terms affects your statutory rights.</p>
+
+<h2>8. Ending these terms</h2>
+<p>You can stop using Gambit Garden at any time by deleting it. We may end your licence if you seriously breach these terms.</p>
+
+<h2>9. Changes</h2>
+<p>We may update these terms. The date above shows the current version. For important changes, we will tell you in the app before they take effect.</p>
+
+<h2>10. Governing law</h2>
+<p>These terms are governed by the laws of the United States. If you are a consumer, you keep the protection of the mandatory laws of the country where you live, and you may bring claims in your local courts.</p>
+
+<h2>11. Contact</h2>
+<p>Wael Rooma · <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a></p>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

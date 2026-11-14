@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heelwise Support</title>
+<meta name="description" content="Help with the Heelwise dog-training app: data, reminders, the clicker and subscriptions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#FBFAF8;--surface:#FFFFFF;--surface-2:#F3EFEA;
+  --ink:#1A1612;--ink-2:#4A433C;--muted:#6E655C;
+  --brand:#8C4F22;--brand-soft:#F4E6DA;--danger:#A3302A;
+  --line:#E4DDD5;--focus:#8C4F22;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121110;--surface:#1C1A18;--surface-2:#242120;
+  --ink:#F2EDE7;--ink-2:#CFC6BC;--muted:#A89E93;
+  --brand:#E2A877;--brand-soft:#33251A;--danger:#F08A80;
+  --line:#34302C;--focus:#E2A877;
+}}
+:root[data-theme="dark"]{
+  --bg:#121110;--surface:#1C1A18;--surface-2:#242120;
+  --ink:#F2EDE7;--ink-2:#CFC6BC;--muted:#A89E93;
+  --brand:#E2A877;--brand-soft:#33251A;--danger:#F08A80;
+  --line:#34302C;--focus:#E2A877;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:600 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:16px;padding:16px 18px;margin:24px 0}
+.callout p{margin:0;color:var(--ink)}
+.callout.warn{border-left-color:var(--danger)}
+.summary{background:var(--brand-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Heelwise home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="var(--brand)"/><path d="M19 48 L22 29 C24 19 33 13 42 17 L53 26 C56 28 55 33 51 34 L41 36 L34 49 Z" fill="var(--bg)"/><circle cx="42" cy="25" r="1.8" fill="var(--brand)"/><circle cx="30" cy="45" r="3.2" fill="none" stroke="var(--brand)" stroke-width="1.8"/></svg>
+    Heelwise
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p>Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a> and we'll reply within two working days. A screenshot of the problem is usually enough. Please don't send your dog's logs unless we ask for them.</p>
+
+  <div class="callout warn"><p><strong>Need help with your dog's safety?</strong> We can help with the app, but we can't assess your dog. If your dog is aggressive, panics when alone or has suddenly changed behaviour, contact your vet first. After that, find a certified behaviour professional, for example through CCPDT, IAABC or a veterinary behaviourist. In an emergency, call your vet or an emergency animal clinic now.</p></div>
+
+  <h2>Common questions</h2>
+  <details><summary>Where is my data stored?</summary><p>Only on your phone. Heelwise has no account and keeps no copy of your logs on a server. See the <a href="/privacy">Privacy Policy</a>.</p></details>
+  <details><summary>How do I move my data to a new phone?</summary><p>If your iCloud or Google device backup includes app data, restoring it brings Heelwise back with everything else. You can also keep your own copy: go to Settings → Your data → Export to save your data as JSON and CSV files.</p></details>
+  <details><summary>How do I delete everything?</summary><p>Go to Settings → Your data → Delete all data. This can't be undone, so export first if you want a copy.</p></details>
+  <details><summary>The clicker is silent</summary><p>In Settings, check that "Clicker sound" is on, then turn your media volume up. The clicker plays even when your phone is on silent and mixes with your music. If you'd rather train in silence, use a spoken marker such as "yes". The lessons explain how.</p></details>
+  <details><summary>My reminders aren't arriving</summary><p>First, allow notifications for Heelwise in your phone's settings. Then open Settings → Reminders in the app and save your times again. On some Android phones, battery saver delays notifications. If that happens, exclude Heelwise from battery saver.</p></details>
+  <details><summary>When does my dog move to the next step?</summary><p>Heelwise suggests moving on once your last two sessions at a step reached about 8 out of 10, with at least five repetitions each. You decide when to move on, and you can go back a step at any time. Going back is normal.</p></details>
+  <details><summary>How do I restore my Heelwise Plus purchase?</summary><p>Open the Heelwise Plus screen and tap "Restore purchases". Use the same Apple ID or Google account you subscribed with.</p></details>
+  <details><summary>How do I cancel my subscription?</summary><p>On iPhone, go to Settings → your name → Subscriptions. On Android, go to Google Play → Payments &amp; subscriptions → Subscriptions. You keep Plus until the end of the period you paid for.</p></details>
+  <details><summary>Can I get a refund?</summary><p>Refunds are handled by Apple or Google. On iPhone, request one at reportaproblem.apple.com. On Android, request one from your Google Play order history.</p></details>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

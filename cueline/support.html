@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Cueline Support</title>
+<meta name="description" content="Help with Cueline: speed, mirror mode, recording and remote control.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F5F3EF;--surface:#FFFFFF;--surface-2:#EBE7E1;--ink:#1B1916;--ink-2:#45403A;--muted:#655E56;
+  --brand:#B23A1D;--brand-soft:#F8E3DB;--line:#DAD4CB;--focus:#B23A1D;--mark-ink:#FFFFFF;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F0E0D;--surface:#1A1816;--surface-2:#25221F;--ink:#F1EDE7;--ink-2:#CFC8BE;--muted:#A39A8F;
+  --brand:#FF9B7B;--brand-soft:#3A221A;--line:#36322E;--focus:#FF9B7B;--mark-ink:#3A0E03;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F0E0D;--surface:#1A1816;--surface-2:#25221F;--ink:#F1EDE7;--ink-2:#CFC8BE;--muted:#A39A8F;
+  --brand:#FF9B7B;--brand-soft:#3A221A;--line:#36322E;--focus:#FF9B7B;--mark-ink:#3A0E03;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:600 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:28px;height:28px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary p{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 20px;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-display);color:var(--ink)}td{color:var(--ink-2)}
+.table-wrap{overflow-x:auto}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+kbd{font:600 14px/1 var(--f-body);background:var(--surface-2);border-radius:6px;padding:3px 7px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Cueline home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="8" fill="var(--brand)"/><path d="M12 11h11M12 21h8" stroke="var(--mark-ink)" stroke-width="2.2" stroke-linecap="round" opacity=".5"/><path d="M12 16h13" stroke="var(--mark-ink)" stroke-width="2.6" stroke-linecap="round"/><path d="M6.5 13.6L9.4 16l-2.9 2.4z" fill="var(--mark-ink)"/></svg>
+    Cueline
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We usually reply within two working days.</p>
+  <div class="card">
+    <p>Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. Please include your phone model and system version. You don't need to send us your script.</p>
+  </div>
+
+  <h2>Common questions</h2>
+  <details><summary>How is the speed set?</summary><p>In words per minute. Most people speak at 130 to 160. Cueline measures how tall your script is on screen and scrolls so you read at that pace, whatever the text size.</p></details>
+  <details><summary>What are the words in [square brackets]?</summary><p>Cues for yourself, like [smile] or [show product]. They appear in colour and are not counted as spoken words.</p></details>
+  <details><summary>How do I use a glass teleprompter rig?</summary><p>Turn on mirror mode (the arrows button in the prompter). The text flips so it reads correctly in the glass.</p></details>
+  <details><summary>Where do my recordings go?</summary><p>After you stop recording, tap "Share or save" and choose Save Video (iPhone) or your gallery app (Android). Takes you don't save are removed later by the system.</p></details>
+  <details><summary>Which remote controls work?</summary><p>Most Bluetooth presentation clickers, page turners and keyboards. Pair them in your phone's Bluetooth settings. <kbd>Space</kbd>, <kbd>Enter</kbd> or <kbd>B</kbd> play and pause, <kbd>Page Down</kbd> or the arrow keys change speed, <kbd>+</kbd> and <kbd>−</kbd> change the size. Remote control is part of Plus.</p></details>
+  <details><summary>The camera or microphone doesn't work</summary><p>Check Settings → Cueline on iPhone, or Settings → Apps → Cueline → Permissions on Android, and allow Camera and Microphone.</p></details>
+  <details><summary>What does Plus add?</summary><p>Unlimited scripts (free keeps 3), remote control and extra prompter colours. The prompter, mirror mode and recording are always free.</p></details>
+  <details><summary>How do I cancel or get a refund?</summary><p>Cancel in your App Store or Google Play subscriptions. Refunds are handled by Apple (reportaproblem.apple.com) or Google Play under their policies.</p></details>
+  <details><summary>Restore my purchase on a new phone</summary><p>Open Cueline → Settings → Plan → Restore, signed in with the same Apple ID or Google account.</p></details>
+</main>
+<footer>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a>
+  <p>© 2026 Wael Rooma. Cueline is not affiliated with Apple or Google.</p>
+</footer>
+</body>
+</html>

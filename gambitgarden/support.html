@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gambit Garden Support</title>
+<meta name="description" content="Help with Gambit Garden: how to play, restoring purchases, refunds, accessibility and contact.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317291F'/%3E%3Crect x='5' y='5' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Crect x='17' y='5' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Crect x='5' y='17' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Crect x='17' y='17' width='10' height='10' rx='3' fill='%23F6F7F1'/%3E%3Ccircle cx='10' cy='10' r='3.6' fill='%235A6FD1'/%3E%3Ccircle cx='22' cy='22' r='3.6' fill='%235A6FD1'/%3E%3Crect x='19.5' y='7.5' width='5' height='5' rx='1' transform='rotate(45 22 10)' fill='%23E39A3E'/%3E%3Crect x='7.5' y='19.5' width='5' height='5' rx='1' transform='rotate(45 10 22)' fill='%23E39A3E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#EEF0EA;--surface:#FFFFFF;--surface-2:#E3E7DF;
+  --ink:#18211B;--ink-2:#34413A;--muted:#56635A;
+  --accent:#2E5D45;--gold:#3A4FAE;--gold-soft:#D6E6DA;
+  --line:#D2D8CC;--focus:#2E5D45;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1411;--surface:#172019;--surface-2:#1F2922;
+  --ink:#E9EEE8;--ink-2:#C5CFC7;--muted:#97A49A;
+  --accent:#8CCBA6;--gold:#A4B3F7;--gold-soft:#1F3A2C;
+  --line:#2A352F;--focus:#8CCBA6;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1411;--surface:#172019;--surface-2:#1F2922;
+  --ink:#E9EEE8;--ink-2:#C5CFC7;--muted:#97A49A;
+  --accent:#8CCBA6;--gold:#A4B3F7;--gold-soft:#1F3A2C;
+  --line:#2A352F;--focus:#8CCBA6;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.tile{width:30px;height:30px;border-radius:9px;background:#C9D3C0;display:inline-grid;grid-template-columns:1fr 1fr;gap:2px;padding:3px}
+.tile i{border-radius:4px;background:#F6F7F1;position:relative}
+.tile i::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#5A6FD1}
+.tile i.m::after{border-radius:2px;transform:rotate(45deg) scale(.8);background:#E39A3E}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--gold-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="tile" aria-hidden="true"><i></i><i class="m"></i><i class="m"></i><i></i></span>Gambit Garden</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="meta">Help with Gambit Garden for iPhone, iPad and Android</p>
+
+<div class="card">
+  <p><strong>Email us:</strong> <a href="mailto:wael.rooma@gmail.com?subject=Gambit Garden%20support">wael.rooma@gmail.com</a></p>
+  <p>Please tell us your device model and the app version from the bottom of Settings. We usually reply within two working days.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<details>
+  <summary>How do I play?</summary>
+  <p>On your turn, do one thing: sow a sprout on an empty bed beside one of your plants, or grow one of your plants (sprout, shrub, tree). When your plant grows, enemy plants beside it that are now shorter wilt one size, and a wilted sprout is gone. A plant that becomes a tree blooms and sows your sprouts into the empty beds around it. When the season's turns run out, the bigger garden wins: a sprout is 1 point, a shrub 2 and a tree 3. The full rules are in the app under Home → How to play.</p>
+</details>
+<details>
+  <summary>Can I take a move back?</summary>
+  <p>Yes. Undo is unlimited while a game is in progress. Against the computer it takes back your last move and the computer's reply. Once the season ends, the result is recorded and can't be undone.</p>
+</details>
+<details>
+  <summary>Why does the second player get "dew"?</summary>
+  <p>In the small Courtyard garden, moving first is worth about two points between equal players, so whoever moves second starts with 2 points of dew. The larger gardens are balanced without it. We measured this by having the computer play itself many times.</p>
+</details>
+<details>
+  <summary>I bought Gambit Garden Premium on another device. How do I get it back?</summary>
+  <p>Sign in to the same Apple ID or Google account. Then go to Settings → Restore purchase, or tap Restore on the upgrade screen. A purchase made through Apple doesn't carry over to Google, or the other way round.</p>
+</details>
+
+<details>
+  <summary>How do I get a refund?</summary>
+  <p>Apple and Google handle all refunds. For Apple, go to reportaproblem.apple.com. For Google, go to play.google.com, open Order history and request a refund.</p>
+</details>
+
+<details>
+  <summary>Can I move my record to a new phone?</summary>
+  <p>Your record is stored only on your device, because there is no account. A full device backup and restore through iCloud or Google usually brings it across. You can always restore the purchase, even if your record doesn't come across.</p>
+</details>
+
+<details>
+  <summary>Accessibility options</summary>
+  <p>Settings has Reduce motion (it also follows your system setting), Preview moves, and switches for sound and haptics. Text follows your system text size. Every bed is labelled for VoiceOver and TalkBack with its position and what grows there. Iris plants have round petals and Marigold plants pointed ones, so the two sides never rely on colour alone.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Settings → Reset record erases your record and current game, and deleting the app removes everything Gambit Garden has stored on your device, and deleting the app also removes it. We keep no gameplay data on any server. See the <a href="privacy">Privacy Policy</a>.</p>
+</details>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

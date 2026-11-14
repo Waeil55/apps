@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ridgeward Support</title>
+<meta name="description" content="Help with Ridgeward: how to play, restoring purchases, refunds, accessibility and contact.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 6 L86 18 V46 C86 70 70 86 50 95 C30 86 14 70 14 46 V18 Z' fill='%233F62BF'/%3E%3Cpath d='M24 62 L40 44 L50 54 L62 38 L76 62' fill='none' stroke='white' stroke-width='8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Inter",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#EDEFEA;--surface:#FFFFFF;--surface-2:#E2E6E0;
+  --ink:#161D22;--ink-2:#333E46;--muted:#57636B;
+  --accent:#2F4E9E;--gold:#7A5608;--gold-soft:#F2E6C8;
+  --line:#D3D8D2;--focus:#2F4E9E;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1317;--surface:#171E24;--surface-2:#1F282F;
+  --ink:#ECEFEC;--ink-2:#C7CFCD;--muted:#9AA6A8;
+  --accent:#93AEF2;--gold:#E3BE6A;--gold-soft:#372D17;
+  --line:#2A353C;--focus:#93AEF2;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1317;--surface:#171E24;--surface-2:#1F282F;
+  --ink:#ECEFEC;--ink-2:#C7CFCD;--muted:#9AA6A8;
+  --accent:#93AEF2;--gold:#E3BE6A;--gold-soft:#372D17;
+  --line:#2A353C;--focus:#93AEF2;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.tile{width:30px;height:32px;position:relative;display:inline-block}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--gold-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="tile" aria-hidden="true"><svg viewBox="0 0 100 100" width="30" height="30"><path d="M50 6 L86 18 V46 C86 70 70 86 50 95 C30 86 14 70 14 46 V18 Z" fill="#3F62BF"/><path d="M24 62 L40 44 L50 54 L62 38 L76 62" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="62" cy="26" r="7" fill="#E3BE6A"/></svg></span>Ridgeward</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="meta">Help with Ridgeward for iPhone, iPad and Android</p>
+
+<div class="card">
+  <p><strong>Email us:</strong> <a href="mailto:wael.rooma@gmail.com?subject=Ridgeward%20support">wael.rooma@gmail.com</a></p>
+  <p>Please tell us your device model and the app version from the bottom of Settings. We usually reply within two working days.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<details>
+  <summary>How do I play?</summary>
+  <p>Tap one of your blue units, then tap a blue tile to move it. Tap a red foe in range to see the exact damage, and tap again to strike. Each unit moves once and acts once. When you are done, tap End turn and the Hollow moves. Shaded tiles show where foes can strike next turn. Forests give cover, ridges add damage and water blocks movement. There are no dice: every number is shown before you commit. The full guide is in the app under Settings → How to play.</p>
+</details>
+
+<details>
+  <summary>Can I take a move back?</summary>
+  <p>Yes. Undo steps back through every move and action of your current turn. After you end your turn, the Hollow's moves are final. You can also restart a mission at any time.</p>
+</details>
+
+<details>
+  <summary>What is the Daily Skirmish?</summary>
+  <p>The Daily Skirmish is a new map every day, and it's the same map for everyone who plays that day. It always uses the four core units. Winning it on consecutive days builds your streak, and you can replay it to improve your result. The Daily Skirmish is free forever.</p>
+</details>
+
+<details>
+  <summary>I bought Ridgeward Premium on another device. How do I get it back?</summary>
+  <p>Sign in to the same Apple ID or Google account. Then go to Settings → Restore purchase, or tap Restore on the upgrade screen. A purchase made through Apple doesn't carry over to Google, or the other way round.</p>
+</details>
+
+<details>
+  <summary>How do I get a refund?</summary>
+  <p>Apple and Google handle all refunds. For Apple, go to reportaproblem.apple.com. For Google, go to play.google.com, open Order history and request a refund.</p>
+</details>
+
+<details>
+  <summary>Can I move my progress to a new phone?</summary>
+  <p>Your progress is stored only on your device, because there is no account. A full device backup and restore through iCloud or Google usually brings it across. You can always restore the purchase, even if your progress doesn't come across.</p>
+</details>
+
+<details>
+  <summary>Accessibility options</summary>
+  <p>Settings has Reduce motion (it also follows your system setting), danger zones, and switches for sound and haptics. Text follows your system text size. Every board tile is labelled for VoiceOver and TalkBack with its row, column, terrain and any unit on it. Your units are round and foes are square, so sides never rely on colour alone.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Settings → Reset progress erases everything Ridgeward has stored on your device, and deleting the app also removes it. We keep no gameplay data on any server. See the <a href="privacy">Privacy Policy</a>.</p>
+</details>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

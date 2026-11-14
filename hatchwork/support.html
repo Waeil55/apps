@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hatchwork Support</title>
+<meta name="description" content="How to play Hatchwork, restore a purchase, and contact support.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23272B4E'/%3E%3Crect x='7' y='7' width='8' height='8' rx='2' fill='%23F5F3EE'/%3E%3Crect x='17' y='17' width='8' height='8' rx='2' fill='%23F5F3EE'/%3E%3Crect x='7' y='17' width='8' height='8' rx='2' fill='%23E8B95A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F5F3EE;--surface:#FFFFFF;--surface-2:#ECE9E2;
+  --ink:#1B1E27;--ink-2:#3A3F4D;--muted:#5D6270;
+  --accent:#3B3F8F;--gold:#8A5A00;--gold-soft:#F6E7C8;--cell:#272B4E;
+  --line:#DAD6CC;--focus:#3B3F8F;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1117;--surface:#181B24;--surface-2:#21242F;
+  --ink:#ECEDF2;--ink-2:#C5C8D3;--muted:#9A9EAD;
+  --accent:#A9AEFF;--gold:#E8B95A;--gold-soft:#3A2F17;--cell:#C9CCF5;
+  --line:#2C303C;--focus:#A9AEFF;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1117;--surface:#181B24;--surface-2:#21242F;
+  --ink:#ECEDF2;--ink-2:#C5C8D3;--muted:#9A9EAD;
+  --accent:#A9AEFF;--gold:#E8B95A;--gold-soft:#3A2F17;--cell:#C9CCF5;
+  --line:#2C303C;--focus:#A9AEFF;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:800 21px/1 var(--f-display);color:var(--ink);text-decoration:none;letter-spacing:-.02em}
+.mark{display:grid;grid-template-columns:12px 12px;gap:2px}
+.mark i{width:12px;height:12px;border-radius:3px;border:1.5px solid var(--cell);display:block}
+.mark i.f{background:var(--cell)}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:800 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.03em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px;letter-spacing:-.01em}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--gold-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:700 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="mark" aria-hidden="true"><i class="f"></i><i></i><i class="f"></i><i class="f"></i></span>Hatchwork</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="meta">Help for Hatchwork on iPhone, iPad and Android</p>
+
+<div class="card">
+  <p><strong>Email us:</strong> <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a></p>
+  <p>Tell us your device, its system version and the app version (Settings, at the bottom). We usually reply within two business days.</p>
+</div>
+
+<h2>How to play</h2>
+<details open><summary>What do the numbers mean?</summary>
+<p>Each number is a run of filled squares in that row or column, in order from left to right or top to bottom. "3 1" means three filled squares in a row, at least one gap, then one more. A row marked 0 has no filled squares.</p></details>
+<details><summary>How do I fill or mark squares?</summary>
+<p>Tap a square to fill it, or drag along a row or column to fill several at once. Switch to <em>Mark</em> to mark squares you know are empty. Tapping a square again with the same tool clears it.</p></details>
+<details><summary>Will I ever need to guess?</summary>
+<p>No. Every picture and every generated puzzle is checked by a solver before you see it: it has exactly one solution, and you can reach it by reasoning one row or column at a time. A few pictures start with one to three squares already shown to make that true.</p></details>
+<details><summary>How do hints work?</summary>
+<p>If a square is wrong, the hint outlines it first. Otherwise it tells you which row or column to look at and reveals one square that can be worked out there.</p></details>
+<details><summary>When does the Daily emblem change?</summary>
+<p>At midnight on your device's clock. Solve it on consecutive days to grow your streak. Missing a day starts a new streak.</p></details>
+
+<h2>Purchases</h2>
+<details><summary>What does Hatchwork Premium include?</summary>
+<p>Five more picture packs (30 pictures) and 15×15 Quick play. It is a one-time purchase, not a subscription. The Daily emblem, the First Light pack and 5×5 and 10×10 Quick play are free forever.</p></details>
+<details><summary>How do I restore my purchase on a new device?</summary>
+<p>Sign in to the same Apple ID or Google account, open Hatchwork, then go to Settings → Restore purchase.</p></details>
+<details><summary>How do I get a refund?</summary>
+<p>Refunds are handled by the store. On iPhone or iPad, use <a href="https://waeil55.github.io/apps/hatchwork/le.com">reportaproblem.apple.com</a>. On Android, use the order in your Google Play account.</p></details>
+
+<h2>Your data</h2>
+<details><summary>Where is my progress stored?</summary>
+<p>Only on your device. There is no account or cloud sync. Device backups (iCloud or Google) may include it.</p></details>
+<details><summary>How do I erase everything?</summary>
+<p>Settings → Reset progress, then tap again to confirm. Deleting the app also removes its data. See the <a href="privacy">Privacy Policy</a>.</p></details>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

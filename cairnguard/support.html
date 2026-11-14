@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cairnguard Support</title>
+<meta name="description" content="Help with Cairnguard: how to play, restoring purchases, refunds, accessibility and contact.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23102A33'/%3E%3Crect x='8' y='4' width='17' height='24' rx='3' fill='%23FFFCF5'/%3E%3Cpath d='M16.5 10l1.3 4.2 4.2 1.3-4.2 1.3-1.3 4.2-1.3-4.2-4.2-1.3 4.2-1.3z' fill='%23E2B65F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#EEEBE4;--surface:#FFFFFF;--surface-2:#E4E0D6;
+  --ink:#171D21;--ink-2:#343D43;--muted:#5A6268;
+  --accent:#2D5B45;--gold:#A6461F;--gold-soft:#F3DCCD;
+  --line:#D2CDC1;--focus:#2D5B45;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1316;--surface:#171D21;--surface-2:#1F272C;
+  --ink:#ECEEEA;--ink-2:#C6CCCB;--muted:#9AA4A6;
+  --accent:#86C79F;--gold:#F0956C;--gold-soft:#3D2419;
+  --line:#2A343A;--focus:#86C79F;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1316;--surface:#171D21;--surface-2:#1F272C;
+  --ink:#ECEEEA;--ink-2:#C6CCCB;--muted:#9AA4A6;
+  --accent:#86C79F;--gold:#F0956C;--gold-soft:#3D2419;
+  --line:#2A343A;--focus:#86C79F;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.tile{width:30px;height:32px;position:relative;display:inline-block}
+.tile::before{content:"";position:absolute;inset:3px 0 0;border-radius:9px;background:#2D5B45}
+.tile span{position:absolute;inset:0 0 3px;border-radius:9px;background:#B4532C;color:#FFF4EC;display:flex;align-items:center;justify-content:center;font:700 18px/1 var(--f-display);box-shadow:0 0 0 1px rgba(0,0,0,.06)}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--gold-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="tile" aria-hidden="true"><span>▲</span></span>Cairnguard</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="meta">Help with Cairnguard for iPhone, iPad and Android</p>
+
+<div class="card">
+  <p><strong>Email us:</strong> <a href="mailto:wael.rooma@gmail.com?subject=Cairnguard%20support">wael.rooma@gmail.com</a></p>
+  <p>Please tell us your device model and the app version from the bottom of Settings. We usually reply within two working days.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<details>
+  <summary>How do I play?</summary>
+  <p>Wisps walk a trail around your grid towards the gate. Summon stones with shards; every stone fires on its own. Drag a stone onto any other stone of the same height to stack them into one taller, much stronger stone. Ember hits hard, Frost slows, Thorn splashes and Spark arcs. Attune a kind to strengthen all of its stones, pick a boon after every third wave, and hold for 12 waves. The full guide is in the app under Settings → How to play.</p>
+</details>
+
+<details>
+  <summary>What happens if I close the game mid-run?</summary>
+  <p>Your run is saved. If you leave during a wave, it resumes from the start of that wave. Between waves it resumes exactly where you were.</p>
+</details>
+
+<details>
+  <summary>What is the Daily Trail?</summary>
+  <p>The Daily Trail is a new run each day, and it's the same run for everyone who plays that day. Finishing it (win or lose) keeps your streak going, and your best score of the day is kept. The Daily Trail is free forever.</p>
+</details>
+
+<details>
+  <summary>I bought Cairnguard Premium on another device. How do I get it back?</summary>
+  <p>Sign in to the same Apple ID or Google account. Then go to Settings → Purchases → Restore purchase, or tap Restore on the upgrade screen. A purchase made through Apple doesn't carry over to Google, or the other way round.</p>
+</details>
+
+<details>
+  <summary>How do I get a refund?</summary>
+  <p>Apple and Google handle all refunds. For Apple, go to reportaproblem.apple.com. For Google, go to play.google.com, open Order history and request a refund.</p>
+</details>
+
+<details>
+  <summary>Can I move my progress to a new phone?</summary>
+  <p>Your progress is stored only on your device, because there is no account. A full device backup and restore through iCloud or Google usually brings it across. You can always restore the purchase, even if your progress doesn't come across.</p>
+</details>
+
+<details>
+  <summary>Accessibility options</summary>
+  <p>Settings has Reduce motion (it also follows your system setting) and switches for sound and haptics. Text follows your system text size. Every spot on the grid is labelled for VoiceOver and TalkBack with the stone's kind and height, and you can stack by selecting one stone and then another instead of dragging. Each stone kind shows a glyph as well as a colour. Game speed can be set to 1× or 2×.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Settings → Reset progress erases everything Cairnguard has stored on your device, and deleting the app also removes it. We keep no gameplay data on any server. See the <a href="privacy">Privacy Policy</a>.</p>
+</details>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

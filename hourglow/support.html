@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hourglow Support</title>
+<meta name="description" content="Help with Hourglow, a calm intermittent fasting timer: starting and editing fasts, streaks, reminders and Plus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F6F1EA;--surface:#FFFFFF;--ink:#221A15;--ink-2:#4A3F37;--muted:#6B5F55;
+  --brand:#A4492A;--brand-soft:#F5E0D3;--glow:#E0913F;--track:#E9DFD2;--line:#DDD2C4;--focus:#A4492A;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#16120F;--surface:#221C18;--ink:#F2EBE4;--ink-2:#CDC2B8;--muted:#A5998E;
+  --brand:#F0A57E;--brand-soft:#4A2A1C;--glow:#F4C26E;--track:#352D27;--line:#3A322B;--focus:#F4C26E;
+}}
+:root[data-theme="dark"]{
+  --bg:#16120F;--surface:#221C18;--ink:#F2EBE4;--ink-2:#CDC2B8;--muted:#A5998E;
+  --brand:#F0A57E;--brand-soft:#4A2A1C;--glow:#F4C26E;--track:#352D27;--line:#3A322B;--focus:#F4C26E;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:600 22px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 23px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:600 17px/1.35 var(--f-body);color:var(--ink);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary h2{color:var(--ink)}
+.note{border-left:4px solid var(--brand);background:var(--surface);border-radius:12px;padding:12px 16px;margin:24px 0}
+.note p{margin:6px 0;color:var(--ink)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--ink);font-weight:600}
+td{color:var(--ink-2)}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Hourglow home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--glow)"/><stop offset="1" stop-color="var(--brand)"/></linearGradient></defs><circle cx="16" cy="16" r="12" stroke="var(--track)" stroke-width="4" fill="none"/><path d="M16 4a12 12 0 1 1-12 12" stroke="url(#lg)" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="16" cy="16" r="4.5" fill="var(--glow)"/></svg>
+    Hourglow
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We read every message. Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>, and we usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+  <h3>How do I start and end a fast?</h3>
+  <p>On Today, tap Start fast when you finish your last meal. The ring fills as you go and shows when you reach your goal. Tap End fast when you eat again. If you end before your goal, Hourglow asks first, and you can tap Undo in the message that appears.</p>
+  <h3>I forgot to tap Start. Can I change the start time?</h3>
+  <p>Yes. While a fast is running, tap the Started tile on Today and move the time back by 15 minutes or an hour at a time. For a finished fast, open History and tap it to change its start or end, or to delete it.</p>
+  <h3>Which plan should I choose?</h3>
+  <p>That is a choice for you and, if you have any health questions, your doctor. Hourglow offers 16:8 (16 hours fasting, 8-hour eating window), 18:6 and OMAD (one meal a day). With Plus you can also make your own plan from 12 to 24 hours.</p>
+  <h3>How does the streak work?</h3>
+  <p>A day counts when a fast that reached its goal ends on that day. Your streak is the run of those days up to today. It keeps counting through yesterday while today's fast is still running, so it never looks broken mid-fast.</p>
+  <h3>Why didn't I get a reminder?</h3>
+  <p>Check that the reminder is on in Hourglow's Settings and that notifications are allowed for Hourglow in your phone's settings. Focus modes and battery savers can also hold notifications back.</p>
+  <h3>Does Hourglow work with Apple Health or Health Connect?</h3>
+  <p>Not in this version. Your data stays inside Hourglow on your phone.</p>
+  <h3>How do I restore Plus on a new phone?</h3>
+  <p>Open Settings → See Plus → Restore purchases, signed in to the same Apple ID or Google account. Your history moves only through your phone's own backup or transfer.</p>
+  <h3>How do I cancel Plus?</h3>
+  <p>On iPhone, go to Settings → your name → Subscriptions. On Android, go to Google Play → Payments &amp; subscriptions → Subscriptions. Your history stays, and the free features keep working.</p>
+  <h3>How do I delete my data?</h3>
+  <p>In the app, go to Settings → Delete all data.</p>
+
+  <div class="note">
+    <p>Hourglow is a timer and journal, not medical advice. For questions about your health, diet or medication, please speak to a doctor.</p>
+  </div>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms of use</a><a href="/support">Support</a>© 2026 Wael Rooma</footer>
+</body>
+</html>

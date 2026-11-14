@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evenhand Support</title>
+<meta name="description" content="Help with Evenhand: inviting your co-parent, messages, the calendar, expenses, records, subscriptions and hardship waivers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Newsreader",Georgia,serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F7F8FA;--surface:#FFFFFF;--surface-2:#EEF1F4;
+  --ink:#14181D;--ink-2:#3D4651;--muted:#5F6873;
+  --accent:#2E4A62;--accent-soft:#E1E8EF;--clay:#9A5E34;
+  --line:#D5D9DE;--focus:#2E4A62;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1216;--surface:#171B21;--surface-2:#1E242B;
+  --ink:#ECEFF2;--ink-2:#C1C8D0;--muted:#98A1AB;
+  --accent:#A9C2D8;--accent-soft:#1F2C38;--clay:#D9A47C;
+  --line:#2B323A;--focus:#A9C2D8;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1216;--surface:#171B21;--surface-2:#1E242B;
+  --ink:#ECEFF2;--ink-2:#C1C8D0;--muted:#98A1AB;
+  --accent:#A9C2D8;--accent-soft:#1F2C38;--clay:#D9A47C;
+  --line:#2B323A;--focus:#A9C2D8;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:600 22px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 24px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:600 17px/1.3 var(--f-body);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--clay);border-radius:14px;padding:16px 18px;margin:24px 0}
+.callout p{margin:0;color:var(--ink)}
+.summary{background:var(--accent-soft);border-radius:14px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary h2{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--ink);font-weight:600}
+td{color:var(--ink-2)}
+.table-wrap{overflow-x:auto}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-body);padding:12px 0;min-height:44px;color:var(--ink)}
+code{font-size:14px;background:var(--surface-2);padding:1px 5px;border-radius:5px;word-break:break-all}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Evenhand home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="var(--accent)"/><path d="M14 38C14 26 22 19 32 19" fill="none" stroke="var(--bg)" stroke-width="4.2" stroke-linecap="round"/><path d="M50 38C50 26 42 19 32 19" fill="none" stroke="var(--bg)" stroke-width="4.2" stroke-linecap="round" opacity=".62"/><path d="M12 44H52" stroke="var(--bg)" stroke-width="4.2" stroke-linecap="round"/></svg>
+    Evenhand
+  </a>
+  <nav aria-label="Site"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. A real person answers within 2 business days.</p>
+
+  <div class="callout">
+    <p>If you or your children are in danger, contact local emergency services now. Evenhand does not monitor messages or alert anyone.</p>
+  </div>
+
+  <h2>Getting started</h2>
+  <details><summary>How do I invite my co-parent?</summary>
+    <p>Open More › Family &amp; invite and tap Share invite. Send the link privately, for example by text or email. Your co-parent installs Evenhand, chooses "I have an invite from my co-parent" and opens or pastes the link. The link works once and expires after 14 days.</p></details>
+  <details><summary>Why shouldn't I post the invite link publicly?</summary>
+    <p>The link carries the key that encrypts your family's sensitive records. Anyone with an unused link could join in your co-parent's place, so share it only with them.</p></details>
+  <details><summary>Does my co-parent have to pay?</summary>
+    <p>No. Everyone can use messaging, the calendar, swaps, expenses and the children's card for free. If either parent subscribes to Plus, it covers both of you.</p></details>
+
+  <h2>Messages and records</h2>
+  <details><summary>Can I edit or delete a message?</summary>
+    <p>No, and neither can your co-parent or we. That's what makes the record trustworthy. If you made a mistake, send a short correction.</p></details>
+  <details><summary>What does "chain intact" mean?</summary>
+    <p>Each message carries a SHA-256 hash of its contents and of the message before it. Your phone recomputes every hash. "Intact" means no stored message has been changed, removed or reordered since it was sent.</p></details>
+  <details><summary>How can someone else check an exported record?</summary>
+    <p>Each message hash is SHA-256 of <code>evenhand-msg-v1|family id|sequence|sender id|server time|SHA-256 of message text|previous hash</code>. The first message's previous hash is 64 zeros. Anyone can recompute these with a standard SHA-256 tool, using the values printed in the PDF or the JSON export. The export digest is SHA-256 of the exported records in canonical JSON.</p></details>
+  <details><summary>Will a court accept Evenhand records?</summary>
+    <p>We can't promise that, and nobody else honestly can either. Evenhand keeps factual, time-stamped records with integrity hashes and makes them easy to export. Whether and how they are used is up to the people and courts involved. Please ask your lawyer.</p></details>
+
+  <h2>Calendar and expenses</h2>
+  <details><summary>How do swaps work?</summary>
+    <p>Pick the days on the calendar and send a request with a reason. Your co-parent approves or declines it once, and you can withdraw it until then. Approved swaps show on both calendars, and every request stays in Swap history.</p></details>
+  <details><summary>How do reimbursements work?</summary>
+    <p>Log an expense with the share you agreed (50% by default) and request reimbursement. Your co-parent marks it paid once they have paid you some other way. Evenhand doesn't move money. They can also decline with a note.</p></details>
+
+  <h2>Subscriptions</h2>
+  <details><summary>How do I cancel?</summary>
+    <p>On iPhone, go to Settings › your name › Subscriptions › Evenhand. On Android, go to Google Play › Payments &amp; subscriptions › Subscriptions. Plus stays on until the end of the period you paid for, and your records always stay.</p></details>
+  <details><summary>Restoring a purchase on a new phone</summary>
+    <p>Sign in, then tap Settings › Restore purchases.</p></details>
+  <details id="hardship"><summary>Hardship waiver</summary>
+    <p>If cost is what's stopping you from using Plus, for example for PDF records, email <a href="mailto:wael.rooma@gmail.com?subject=Hardship%20waiver">wael.rooma@gmail.com</a> with the subject "Hardship waiver". No documents are needed. We review every request.</p></details>
+
+  <h2>Your data</h2>
+  <details><summary>Export everything</summary>
+    <p>Go to Settings › Export my data, or Records › All data (JSON). This is free, always.</p></details>
+  <details><summary>Delete my account</summary>
+    <p>Email us from the address you sign in with. We'll delete your account and personal data. Records you shared stay in your co-parent's copy, as the <a href="/privacy">Privacy Policy</a> explains.</p></details>
+</main>
+<footer>
+  <p><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></p>
+  <p>© 2026 Wael Rooma. Evenhand keeps factual records. It is not a law firm and does not give legal advice.</p>
+</footer>
+</body>
+</html>

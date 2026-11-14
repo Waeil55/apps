@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quillrun Support</title>
+<meta name="description" content="Help with Quillrun: how to play, restoring purchases, refunds, accessibility and contact.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B2233'/%3E%3Crect x='6' y='5' width='20' height='20' rx='5' fill='%23FFFCF5'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='15' fill='%231B2233'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F6F2EA;--surface:#FFFCF5;--surface-2:#EFE8DA;
+  --ink:#1B2233;--ink-2:#3D4559;--muted:#636A7A;
+  --accent:#B8402B;--gold:#8A6A12;--gold-soft:#F4E7BE;
+  --line:#E2D9C6;--focus:#3654A3;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11141C;--surface:#1A1F2B;--surface-2:#232A38;
+  --ink:#F1ECE1;--ink-2:#C9CEDA;--muted:#9AA1B0;
+  --accent:#E37A63;--gold:#E9C75A;--gold-soft:#3A3220;
+  --line:#2E3546;--focus:#9DB4F2;
+}}
+:root[data-theme="dark"]{
+  --bg:#11141C;--surface:#1A1F2B;--surface-2:#232A38;
+  --ink:#F1ECE1;--ink-2:#C9CEDA;--muted:#9AA1B0;
+  --accent:#E37A63;--gold:#E9C75A;--gold-soft:#3A3220;
+  --line:#2E3546;--focus:#9DB4F2;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.tile{width:30px;height:32px;position:relative;display:inline-block}
+.tile::before{content:"";position:absolute;inset:3px 0 0;border-radius:7px;background:#CDBF9F}
+.tile span{position:absolute;inset:0 0 3px;border-radius:7px;background:#FFFCF5;color:#1B2233;display:flex;align-items:center;justify-content:center;font:700 18px/1 var(--f-display);box-shadow:0 0 0 1px rgba(0,0,0,.06)}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--gold-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="tile" aria-hidden="true"><span>Q</span></span>Quillrun</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="meta">Help with Quillrun for iPhone, iPad and Android</p>
+
+<div class="card">
+  <p><strong>Email us:</strong> <a href="mailto:wael.rooma@gmail.com?subject=Quillrun%20support">wael.rooma@gmail.com</a></p>
+  <p>Please tell us your device model and the app version from Settings → About. We usually reply within two working days.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<details>
+  <summary>How do I play?</summary>
+  <p>Spell a word from the letter tiles in your hand, then press Ink. Every letter is worth ink, and longer words multiply it. Reach the page's target before you run out of quills. Use blots to swap tiles you don't want. Between pages, visit the Bindery and spend gilt on marginalia, which change how words score. Every third page has a seal that twists the rules. The full guide is in the app under How to play.</p>
+</details>
+
+<details>
+  <summary>Why wasn't my word accepted?</summary>
+  <p>A word needs at least three letters and must be in Quillrun's dictionary of about 70,000 English words. Proper nouns, abbreviations and words longer than nine letters aren't included. Some seals add their own rule, such as "five letters or more" or "each word must start with a different letter". If a common word seems to be missing, email it to us.</p>
+</details>
+
+<details>
+  <summary>What is the Daily Folio?</summary>
+  <p>The Daily Folio is a new run each day, and it's the same run for everyone who plays that day. Your first finished attempt counts toward your streak. Replays are marked as practice. The Daily Folio is free forever.</p>
+</details>
+
+<details>
+  <summary>I bought Quillrun Complete on another device. How do I get it back?</summary>
+  <p>Sign in to the same Apple ID or Google account. Then go to Settings → Quillrun Complete → Restore purchases, or tap Restore on the upgrade screen. A purchase made through Apple doesn't carry over to Google, or the other way round.</p>
+</details>
+
+<details>
+  <summary>How do I get a refund?</summary>
+  <p>Apple and Google handle all refunds. For Apple, go to reportaproblem.apple.com. For Google, go to play.google.com, open Order history and request a refund.</p>
+</details>
+
+<details>
+  <summary>Can I move my progress to a new phone?</summary>
+  <p>Your progress is stored only on your device, because there is no account. A full device backup and restore through iCloud or Google usually brings it across. You can always restore the purchase, even if your progress doesn't come across.</p>
+</details>
+
+<details>
+  <summary>Accessibility options</summary>
+  <p>Settings has Large tiles, Reduce motion (it follows your system setting by default), and switches for sound and haptics. Tile finishes always show a symbol as well as a colour, and every tile is labelled for VoiceOver and TalkBack. On a keyboard, type letters to spell, use Backspace to remove one and press Enter to ink.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Settings → Reset progress erases everything Quillrun has stored on your device, and deleting the app also removes it. We keep no gameplay data on any server. See the <a href="privacy">Privacy Policy</a>.</p>
+</details>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

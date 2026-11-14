@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Clearroll Support</title>
+<meta name="description" content="Help with Clearroll: duplicates, deleting, subscriptions and privacy.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F4F5F9;--surface:#FFFFFF;--surface-2:#E9EBF2;--ink:#151829;--ink-2:#3B4060;--muted:#5B6180;
+  --brand:#3E4BC9;--brand-soft:#E1E4FA;--line:#D5D8E4;--focus:#3E4BC9;--remove:#B23F27;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1018;--surface:#181B27;--surface-2:#222637;--ink:#ECEEF7;--ink-2:#C0C4DA;--muted:#979DB9;
+  --brand:#A9B2FF;--brand-soft:#262C55;--line:#30354A;--focus:#A9B2FF;--remove:#FF9F88;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1018;--surface:#181B27;--surface-2:#222637;--ink:#ECEEF7;--ink-2:#C0C4DA;--muted:#979DB9;
+  --brand:#A9B2FF;--brand-soft:#262C55;--line:#30354A;--focus:#A9B2FF;--remove:#FF9F88;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:800 20px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:28px;height:28px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:800 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:700 18px/1.3 var(--f-display);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary p{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 20px;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-display);color:var(--ink)}td{color:var(--ink-2)}
+.table-wrap{overflow-x:auto}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:700 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Clearroll home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3" width="20" height="20" rx="6" fill="var(--brand)" opacity=".3"/><rect x="3" y="9" width="20" height="20" rx="6" fill="var(--brand)"/><path d="M8 19.5l3.6 3.5L18 15" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    Clearroll
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We usually reply within two working days.</p>
+  <div class="card">
+    <p>Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. Please include your phone model and system version. Never send us your photos; we don't need them.</p>
+  </div>
+
+  <h2>Common questions</h2>
+  <details><summary>Does Clearroll upload my photos?</summary><p>No. Everything happens on your phone. There is no account and no server that receives your library.</p></details>
+  <details><summary>How does it decide something is a duplicate?</summary><p>Two items are duplicates only if they have the same type, dimensions and file size <em>and</em> identical contents (checked with a SHA-256 fingerprint on your phone). "Similar shots" are photos taken seconds apart, like bursts and retakes. You always choose which to keep.</p></details>
+  <details><summary>I deleted something by mistake</summary><p>On iPhone and iPad, open Photos → Albums → Recently Deleted. Items stay there for 30 days. On Android, check your gallery's Trash or Bin; some devices delete straight away.</p></details>
+  <details><summary>Why is the space freed different from what Settings shows?</summary><p>Clearroll adds up the file sizes your phone reports. Storage figures in Settings can lag, and iOS keeps deleted items in Recently Deleted until they are emptied. If you use iCloud Photos with "Optimise Storage", the phone may hold smaller versions than the full files.</p></details>
+  <details><summary>Clearroll only sees some of my photos</summary><p>You probably allowed access to selected photos only. In the app, tap "Choose more" on the home screen, or change it in your phone's Settings → Clearroll → Photos.</p></details>
+  <details><summary>What does Plus add?</summary><p>Unlimited deleting (free covers a daily allowance), smart grouping such as keeping the suggested shot in every group with one tap, and a monthly reminder. Scanning and reviewing are always free.</p></details>
+  <details><summary>How do I cancel or get a refund?</summary><p>Cancel in your App Store or Google Play subscriptions. Refunds are handled by Apple (reportaproblem.apple.com) or Google Play under their policies.</p></details>
+  <details><summary>Restore my purchase on a new phone</summary><p>Open Clearroll → Settings → Plan → Restore purchases, signed in with the same Apple ID or Google account.</p></details>
+</main>
+<footer>
+  <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a>
+  <p>© 2026 Wael Rooma. Clearroll is not affiliated with Apple or Google.</p>
+</footer>
+</body>
+</html>

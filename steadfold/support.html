@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Steadfold Support</title>
+<meta name="description" content="Help with Steadfold: your data, exports, reminders, subscriptions and how to contact us.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Bricolage Grotesque",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --bg:#EDF2EF;--surface:#FFFFFF;--surface-2:#E2EAE6;
+  --ink:#10302E;--ink-2:#3C5856;--muted:#5A7270;
+  --brand:#1E5A55;--brand-soft:#D3E5E0;--amber:#D9982A;
+  --line:#C7D5D0;--focus:#B86E00;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1C1B;--surface:#142826;--surface-2:#1B3331;
+  --ink:#E4EFEC;--ink-2:#B9CCC8;--muted:#93ABA7;
+  --brand:#7CC3B8;--brand-soft:#1F3E3B;--amber:#E8B04F;
+  --line:#2A4643;--focus:#F1C46B;
+}}
+:root[data-theme="dark"]{
+  --bg:#0D1C1B;--surface:#142826;--surface-2:#1B3331;
+  --ink:#E4EFEC;--ink-2:#B9CCC8;--muted:#93ABA7;
+  --brand:#7CC3B8;--brand-soft:#1F3E3B;--amber:#E8B04F;
+  --line:#2A4643;--focus:#F1C46B;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 20px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:28px;height:28px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:800 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:700 18px/1.3 var(--f-display);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:14px;padding:16px 18px;margin:24px 0}
+.callout p{margin:0;color:var(--ink)}
+.summary{background:var(--brand-soft);border-radius:14px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-display);color:var(--ink)}
+td{color:var(--ink-2)}
+.table-wrap{overflow-x:auto}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:700 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Steadfold home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 5h17l7 6H11z" fill="var(--brand)"/><path d="M11 12h17l-7 7H4z" fill="var(--amber)"/><path d="M4 20h17l7 7H11z" fill="var(--brand)" opacity=".72"/></svg>
+    Steadfold
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p>Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a> and we'll reply within two working days. Please don't send health details by email; describe the problem and your phone model instead.</p>
+
+  <div class="callout"><p>We can't give medical advice. For questions about your medication or symptoms, contact your prescriber or pharmacist. In an emergency, call your local emergency number.</p></div>
+
+  <h2>Common questions</h2>
+  <details><summary>Where is my data stored?</summary><p>Only on your phone, inside the app. There's no account and we never receive your logs. See the <a href="/privacy">Privacy Policy</a>.</p></details>
+  <details><summary>How do I move my data to a new phone?</summary><p>Your phone's own backup (iCloud Backup or Google backup) usually restores app data when you set up a new phone. You can also use Settings → Your data → Export all data (JSON) or Export spreadsheets (CSV) to keep a copy.</p></details>
+  <details><summary>How do I delete everything?</summary><p>Settings → Your data → Delete all data. This can't be undone, so export first if you want a copy.</p></details>
+  <details><summary>Why does the app show my dose exactly as I typed it?</summary><p>Steadfold records your dose as written on your pharmacy or prescription label. It never calculates, converts or suggests doses. If your dose changes, your prescriber will tell you; update it in Settings → Medication and dose.</p></details>
+  <details><summary>My reminders aren't arriving</summary><p>Check that notifications are allowed for Steadfold in your phone's settings, that Focus or Do Not Disturb isn't silencing them, and (on Android) that battery optimisation isn't stopping the app. Then open Settings → Reminders in Steadfold and save your times again.</p></details>
+  <details><summary>How do I restore my Steadfold Plus purchase?</summary><p>Open Settings → Subscription → Restore purchases, signed in to the same Apple ID or Google account you subscribed with.</p></details>
+  <details><summary>How do I cancel my subscription?</summary><p>On iPhone: Settings → your name → Subscriptions → Steadfold. On Android: Google Play → profile → Payments &amp; subscriptions → Subscriptions → Steadfold. You keep Plus until the end of the period you paid for.</p></details>
+  <details><summary>Can I get a refund?</summary><p>Purchases are made through Apple or Google, so refunds are handled by them: <a href="https://waeil55.github.io/apps/steadfold/le.com" rel="noopener">reportaproblem.apple.com</a> for the App Store, or the Google Play order history for Android.</p></details>
+  <details><summary>Does Steadfold connect to Apple Health or Health Connect?</summary><p>Not yet. It's planned for a future version.</p></details>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

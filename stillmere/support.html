@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stillmere Support</title>
+<meta name="description" content="Help with Stillmere, a calm Pomodoro focus timer: the timer, break reminders, valleys, Plus and your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F4F2F5;--surface:#FFFFFF;--ink:#1C1820;--ink-2:#48404F;--muted:#655C6C;
+  --brand:#5E3F6E;--brand-soft:#EEE4F2;--rest:#2E6A56;--line:#DCD6E0;--focus:#5E3F6E;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121019;--surface:#1C1924;--ink:#F2EEF5;--ink-2:#D2CAD8;--muted:#A69CAE;
+  --brand:#D3B5E2;--brand-soft:#33263C;--rest:#8FD3B4;--line:#393342;--focus:#D3B5E2;
+}}
+:root[data-theme="dark"]{
+  --bg:#121019;--surface:#1C1924;--ink:#F2EEF5;--ink-2:#D2CAD8;--muted:#A69CAE;
+  --brand:#D3B5E2;--brand-soft:#33263C;--rest:#8FD3B4;--line:#393342;--focus:#D3B5E2;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font:800 21px/1 var(--f-display);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:800 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 23px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary p{color:var(--ink)}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;background:var(--surface);border-radius:14px;overflow:hidden}
+th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+th{color:var(--ink);font-weight:600}
+.card{background:var(--surface);border-radius:18px;padding:4px 20px 12px;margin:16px 0}
+details{background:var(--surface);border-radius:14px;padding:14px 18px;margin:10px 0}
+summary{cursor:pointer;font-weight:600;color:var(--ink);min-height:24px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--muted);margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Stillmere home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8.5" fill="var(--brand)"/><circle cx="20.5" cy="12" r="3.4" fill="var(--bg)"/><path d="M5,21.2 L8,19.5 L10,17.2 L12,15.2 L13,14.9 L14,15.2 L16,17.1 L18,19 L19,19.2 L21,18.2 L23,17.2 L25,18.5 L27,20.5 L27,21.5 L5,21.5Z" fill="var(--bg)" opacity=".62"/><path d="M8 24.5h16M11.5 27h9" stroke="var(--bg)" stroke-width="1.6" stroke-linecap="round"/></svg>
+    Stillmere
+  </a>
+  <nav aria-label="Pages"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We read every message. Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a> and include your device and app version (Settings, at the bottom).</p>
+
+  <h2>Common questions</h2>
+  <details><summary>How does the valley grow?</summary><p>Each focus session you finish plants one more thing in today's valley: trees, flowers, a cottage after four sessions, a lake after eight. While a session runs, you can watch the next one grow in. Each day starts a new valley. Older ones are in Stats → Your valleys.</p></details>
+  <details><summary>What happens if I stop a session early?</summary><p>Nothing is lost. Tap Reset and the session simply isn't recorded, so it doesn't plant anything. There's no penalty and nothing withers.</p></details>
+  <details><summary>Does the timer keep running if I leave the app?</summary><p>Yes. Stillmere keeps time by the clock, so the timer stays right when your phone sleeps or the app is closed. When you come back, finished sessions are recorded.</p></details>
+  <details><summary>I don't get break reminders</summary><p>Check that Settings → Break reminders is on in Stillmere, and that notifications for Stillmere are allowed in your phone's settings. Focus modes and battery saver can delay or hide notifications.</p></details>
+  <details><summary>How do I change the session lengths?</summary><p>Settings → Timer. Focus can be 15 to 45 minutes (50 to 90 with Plus), short breaks 3 to 10 minutes, long breaks 10 to 30 minutes, and you can choose after how many sessions the long break comes.</p></details>
+  <details><summary>How do I cancel Plus?</summary><p>On iPhone or iPad: Settings → your name → Subscriptions → Stillmere. On Android: Google Play → Profile → Payments &amp; subscriptions → Subscriptions → Stillmere. Plus stays on until the end of the period you paid for.</p></details>
+  <details><summary>I bought Plus but the app shows Free</summary><p>Open Settings → See Plus → Restore, signed in to the same Apple ID or Google account you bought with.</p></details>
+  <details><summary>How do I move my sessions to a new phone?</summary><p>Your data lives in the app on your device. A full device backup and restore (iCloud or Google) normally brings it along. There is no Stillmere account or cloud sync.</p></details>
+  <details><summary>How do I delete my data?</summary><p>Delete one session in Stats → Today's sessions, or everything in Settings → Delete my data. Uninstalling the app also removes it.</p></details>
+
+  <div class="card">
+    <h2>Still stuck?</h2>
+    <p>Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. We usually reply within two working days.</p>
+  </div>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms of use</a><a href="/support">Support</a>© 2026 Wael Rooma</footer>
+</body>
+</html>

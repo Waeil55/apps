@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sprigwell Support</title>
+<meta name="description" content="Help with Sprigwell: watering and feeding schedules, reminders, the photo log and Sprigwell Plus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F3F2EC;--surface:#FFFFFF;--ink:#1A231E;--ink-2:#3E4A43;--muted:#58645D;
+  --brand:#2D5B45;--brand-soft:#DCE9E0;--terra:#97482A;--line:#D6D5CB;--focus:#97482A;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101512;--surface:#19201C;--ink:#E7EEE9;--ink-2:#B7C3BB;--muted:#93A198;
+  --brand:#93CDAB;--brand-soft:#1F3A2C;--terra:#EBA987;--line:#2B3530;--focus:#EBA987;
+}}
+:root[data-theme="dark"]{
+  --bg:#101512;--surface:#19201C;--ink:#E7EEE9;--ink-2:#B7C3BB;--muted:#93A198;
+  --brand:#93CDAB;--brand-soft:#1F3A2C;--terra:#EBA987;--line:#2B3530;--focus:#EBA987;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font:700 22px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+nav a:first-child{margin-left:0}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 23px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:600 17px/1.4 var(--f-body);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary h2{color:var(--ink)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--ink);font-weight:600}
+td{color:var(--ink-2)}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Sprigwell home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="15.2" y="12" width="1.6" height="6" rx=".8" fill="var(--brand)"/><ellipse cx="11.6" cy="11.2" rx="5.4" ry="2.7" transform="rotate(35 11.6 11.2)" fill="var(--brand)"/><ellipse cx="20.4" cy="9.6" rx="5.8" ry="2.9" transform="rotate(-35 20.4 9.6)" fill="var(--brand)"/><path d="M9.5 20.5H22.5L21 28H11Z" fill="var(--terra)"/><rect x="8" y="17.5" width="16" height="3.5" rx="1.2" fill="var(--terra)"/></svg>
+    Sprigwell
+  </a>
+  <nav aria-label="Pages"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We read every message. Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>, and we usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+  <h3>How does Sprigwell decide when to water?</h3>
+  <p>Each plant has a watering interval, such as every 7 days. Sprigwell counts from the last time you tapped "Watered". When you add a plant, picking its kind fills in a sensible starting interval, and "Last watered" sets where the count starts. You can change the interval any time in Edit plant.</p>
+  <h3>The soil is still wet. What should I do?</h3>
+  <p>Tap "Not yet" on Today. Sprigwell checks back in 2 days for watering (7 days for feeding) without changing the plant's regular schedule.</p>
+  <h3>I tapped "Watered" by mistake.</h3>
+  <p>Tap Undo in the message that appears. It puts the job back exactly as it was.</p>
+  <h3>Why didn't I get a reminder?</h3>
+  <p>Sprigwell sends at most one reminder a day, and only on days something is due. Check that reminders are on in Sprigwell's Settings, that notifications are allowed for Sprigwell in your phone's settings, and that Focus or Do Not Disturb is not hiding them. Opening the app re-plans the next two weeks of reminders.</p>
+  <h3>What are seasonal adjustments (Plus)?</h3>
+  <p>Houseplants drink less in the cooler, darker months. With seasonal adjustments on, Sprigwell stretches watering intervals by a quarter in autumn and by half in winter, pauses feeding in winter, and waters a little more often in summer. Choose your hemisphere in Settings so the seasons match where you live.</p>
+  <h3>Where are my photos stored?</h3>
+  <p>Inside Sprigwell on your phone. Photos you add are copied into the app, so deleting the original from your camera roll does not remove it from the photo log.</p>
+  <h3>How do I restore Plus on a new phone?</h3>
+  <p>Open Settings → See Plus → Restore purchases, signed in to the same Apple ID or Google account. Your plants and photos move only through your phone's own backup or transfer.</p>
+  <h3>How do I cancel Plus?</h3>
+  <p>On iPhone, go to Settings → your name → Subscriptions. On Android, go to Google Play → Payments &amp; subscriptions → Subscriptions. Your plants stay, and the free features keep working.</p>
+  <h3>How do I delete my data?</h3>
+  <p>Delete one plant from Edit plant, or everything from Settings → Delete all data.</p>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms of use</a><a href="/support">Support</a>© 2026 Wael Rooma</footer>
+</body>
+</html>

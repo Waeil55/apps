@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hushhour Support</title>
+<meta name="description" content="Help with Hushhour: wind-down routines, the sleep diary, sounds, reminders, purchases and your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F4F2F7;--surface:#FFFFFF;--surface-2:#EAE6F0;
+  --ink:#1B1A2E;--ink-2:#46435C;--muted:#625F78;
+  --brand:#5B4B9A;--brand-soft:#E6E1F4;--accent:#9A5414;--now:#9A5414;
+  --line:#D9D4E2;--focus:#9A5414;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0C0E1C;--surface:#15182B;--surface-2:#1E2238;
+  --ink:#ECEAF6;--ink-2:#C4C1D9;--muted:#9C99B5;
+  --brand:#BDB2F6;--brand-soft:#2A2550;--accent:#F2B66D;--now:#F2B66D;
+  --line:#2C3049;--focus:#F2B66D;
+}}
+:root[data-theme="dark"]{
+  --bg:#0C0E1C;--surface:#15182B;--surface-2:#1E2238;
+  --ink:#ECEAF6;--ink-2:#C4C1D9;--muted:#9C99B5;
+  --brand:#BDB2F6;--brand-soft:#2A2550;--accent:#F2B66D;--now:#F2B66D;
+  --line:#2C3049;--focus:#F2B66D;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:800 20px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:28px;height:28px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:800 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:16px;padding:16px 18px;margin:24px 0}
+.callout p{margin:0;color:var(--ink)}
+.summary{background:var(--brand-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:700 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Hushhour home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><defs><mask id="b"><rect width="32" height="32" fill="#fff"/><circle cx="20.5" cy="11.5" r="8" fill="#000"/></mask></defs><circle cx="14.5" cy="16.5" r="10" fill="var(--brand)" mask="url(#b)"/><circle cx="22.5" cy="10" r="2.4" fill="var(--accent)"/></svg>
+    Hushhour
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p>Questions, bugs or ideas? Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. We read every message and usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+  <details><summary>How do I start my wind-down?</summary><p>On Tonight, tap “Start wind-down”. The player shows one step at a time with a soft timer. Tap “Next step” when you are ready; there is no rush.</p></details>
+  <details><summary>How do I change or edit my routine?</summary><p>On Tonight, tap your routine, then pick another one or tap the pencil to edit its steps. Tap a step's minutes to change its length.</p></details>
+  <details><summary>How do I log a night?</summary><p>In the morning, tap a face on the “How did you sleep?” card, or open Diary → “Log last night”. Adjust the times if they differ from your schedule and tap Save.</p></details>
+  <details><summary>The sound stops when my phone locks</summary><p>Make sure the phone isn't in Low Power Mode and the app's volume is up. Sounds keep playing in the background until the sleep timer ends; set the timer to “Off” to play until you stop it.</p></details>
+  <details><summary>I’m not getting reminders</summary><p>Check Settings → Reminders in Hushhour, then make sure notifications for Hushhour are allowed in your phone’s settings. Focus modes and battery savers can also delay notifications.</p></details>
+  <details><summary>How do I restore my purchase on a new phone?</summary><p>Sign in with the same Apple ID or Google account, then go to Settings → Restore purchases. Your diary itself stays on the old device unless you exported it or your device backup includes it.</p></details>
+  <details><summary>How do I cancel Plus?</summary><p>On iPhone: Settings → your name → Subscriptions → Hushhour. On Android: Google Play → Payments &amp; subscriptions → Subscriptions → Hushhour. Cancel at least 24 hours before renewal.</p></details>
+  <details><summary>How do I delete my data?</summary><p>Settings → Your data → Delete all data. We hold no copy of your diary, so this deletes it completely.</p></details>
+
+  <div class="callout"><p>Hushhour is a wellness tool, not a medical device. If poor sleep continues, please talk to a doctor.</p></div>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

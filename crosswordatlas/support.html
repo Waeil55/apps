@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crossword Atlas Support</title>
+<meta name="description" content="Help with Crossword Atlas: streaks, languages, Plus, restoring purchases and reporting a clue.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F4F0E8;--surface:#FFFDF8;
+  --ink:#18212C;--ink-2:#3B4552;--muted:#555E6A;
+  --brand:#1F4E6B;--brand-soft:#D6E5EE;--brass:#9A6424;
+  --line:#D9D0BF;--focus:#9A6424;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1620;--surface:#17212D;
+  --ink:#EDE8DF;--ink-2:#C9CED6;--muted:#A7AFBA;
+  --brand:#8EC3DE;--brand-soft:#23435A;--brass:#E2AA5E;
+  --line:#2C3948;--focus:#E2AA5E;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1620;--surface:#17212D;
+  --ink:#EDE8DF;--ink-2:#C9CED6;--muted:#A7AFBA;
+  --brand:#8EC3DE;--brand-soft:#23435A;--brass:#E2AA5E;
+  --line:#2C3948;--focus:#E2AA5E;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:600 20px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:28px;height:28px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:14px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary h2{color:var(--ink)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-body);padding:12px 0;min-height:44px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:24px 0}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Crossword Atlas home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="var(--brand)"><rect x="10" y="4" width="5.5" height="5.5" rx="1.2"/><rect x="10" y="10.5" width="5.5" height="5.5" rx="1.2"/><rect x="10" y="23.5" width="5.5" height="5.5" rx="1.2"/><rect x="3.5" y="17" width="5.5" height="5.5" rx="1.2"/><rect x="16.5" y="17" width="5.5" height="5.5" rx="1.2"/><rect x="23" y="17" width="5.5" height="5.5" rx="1.2"/></g><rect x="10" y="17" width="5.5" height="5.5" rx="1.2" fill="var(--brass)"/></svg>
+    Crossword Atlas
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We read every message. Write to <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a> and we&rsquo;ll usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+  <details><summary>How do I switch between Across and Down?</summary><p>Tap the selected square again, or tap the clue bar above the keyboard. On a hardware keyboard, press the space bar or use the arrow keys.</p></details>
+  <details><summary>What&rsquo;s free?</summary><p>Today&rsquo;s Daily Mini, this week&rsquo;s Weekly, practice Minis and the first puzzle in every themed pack, with check, reveal and streaks. Plus adds the archive, Midi and Large practice, and every themed pack.</p></details>
+  <details><summary>How do streaks work?</summary><p>Solve the Daily Mini on its own day to add one to your streak. Your streak stays until the end of the following day. Archive puzzles don&rsquo;t change your streak.</p></details>
+  <details><summary>Does using Reveal break my streak?</summary><p>No. The solve still counts, but it won&rsquo;t set a best time.</p></details>
+  <details><summary>Can I play in Spanish?</summary><p>Yes. Go to Settings &rarr; Puzzle and app language. Spanish puzzles follow the crossword convention of no accents, and the keyboard adds &Ntilde;.</p></details>
+  <details><summary>How do I restore Plus on a new phone?</summary><p>Use the same Apple ID or Google account, open Settings in the app and tap &ldquo;Restore purchases&rdquo;.</p></details>
+  <details><summary>How do I cancel Plus?</summary><p>On iPhone or iPad: Settings &rarr; your name &rarr; Subscriptions. On Android: Google Play &rarr; Profile &rarr; Payments &amp; subscriptions &rarr; Subscriptions. Deleting the app does not cancel.</p></details>
+  <details><summary>I think a clue is wrong.</summary><p>Thank you! Email us the date or pack, the clue number and what you expected. We fix clue mistakes in the next update.</p></details>
+
+  <div class="card">
+    <p><strong>Privacy:</strong> your progress never leaves your device. See the <a href="/privacy">Privacy Policy</a>.</p>
+  </div>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a> &copy; 2026 Wael Rooma</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tendwell Support</title>
+<meta name="description" content="Tendwell, a calm habit tracker. One tap to check off, streaks that forgive days off, and a heatmap of every week. Your habits stay on your phone, with no account, no ads and no tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F6F2EE;--surface:#FFFFFF;--ink:#1E1724;--ink-2:#4A4152;--muted:#675E6E;
+  --brand:#5B3A6E;--brand-ink:#FFFFFF;--brand-soft:#ECE3F1;--bud:#F0A26C;--line:#E1D9D2;--focus:#A4501F;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141017;--surface:#1E1823;--ink:#F1ECF3;--ink-2:#C9C0CE;--muted:#A298A8;
+  --brand:#CDB0E0;--brand-ink:#1E1724;--brand-soft:#33263D;--bud:#F2B58A;--line:#372E3E;--focus:#F2B58A;
+}}
+:root[data-theme="dark"]{
+  --bg:#141017;--surface:#1E1823;--ink:#F1ECF3;--ink-2:#C9C0CE;--muted:#A298A8;
+  --brand:#CDB0E0;--brand-ink:#1E1724;--brand-soft:#33263D;--bud:#F2B58A;--line:#372E3E;--focus:#F2B58A;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:600 22px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 23px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:600 17px/1.35 var(--f-body);color:var(--ink);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary h2{color:var(--ink)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--ink);font-weight:600}
+td{color:var(--ink-2)}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Tendwell home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8.5" fill="var(--brand)"/><path d="M9 16.5l5 5 8.6-10" stroke="var(--brand-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="23.6" cy="9.4" r="2.9" fill="var(--bud)"/></svg>
+    Tendwell
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We read every message. Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>, and we usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+  <h3>How do streaks work?</h3>
+  <p>A daily habit's streak counts the days in a row you kept it, skipping the days it is not scheduled. Today never breaks a streak while it is still open. A weekly habit's streak counts the weeks in a row you reached its target, such as 3 times a week.</p>
+  <h3>I forgot to check off a habit yesterday. Can I fix it?</h3>
+  <p>Yes. Open the habit and tap the day in its History. Tap it again to undo.</p>
+  <h3>What is the difference between daily and weekly habits?</h3>
+  <p>Daily habits are due on the weekdays you pick, for example every day or Monday to Friday. Weekly habits are done any days you like, a set number of times each week.</p>
+  <h3>Why did my reminder not appear?</h3>
+  <p>Check that notifications are allowed for Tendwell in your phone's Settings, and that Focus or Do Not Disturb is not silencing them. On Android, some battery savers delay notifications; allow Tendwell to run without restrictions. Reminders are not available in a web browser.</p>
+  <h3>Can I change which day my week starts on?</h3>
+  <p>Yes. Go to Settings → Week starts on, and choose Monday or Sunday. Weekly targets and the heatmap follow your choice.</p>
+  <h3>How do I move my habits to a new phone?</h3>
+  <p>Tendwell has no account, so your habits move only with your phone's own backup or transfer (iCloud backup, Quick Start, or Google device backup). To restore Plus, open Settings → Tendwell Plus → Restore purchases, signed in to the same Apple ID or Google account.</p>
+  <h3>How do I cancel Plus?</h3>
+  <p>On iPhone, go to Settings → your name → Subscriptions. On Android, go to Google Play → Payments &amp; subscriptions → Subscriptions. Your habits stay, and the free features keep working.</p>
+  <h3>How do I delete my data?</h3>
+  <p>To delete one habit and its history, open it and tap Delete habit. To delete everything, go to Settings → Erase all data.</p>
+</main>
+<footer><a href="/privacy">Privacy policy</a><a href="/terms">Terms of use</a>© 2026 Wael Rooma</footer>
+</body>
+</html>

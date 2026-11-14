@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dayglide Support</title>
+<meta name="description" content="Help with Dayglide: blocks, the timer, routines, reminders, purchases and your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Manrope",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F5F3EF;--surface:#FFFFFF;--surface-2:#ECE9E3;
+  --ink:#1A1C2E;--ink-2:#45485E;--muted:#62657A;
+  --brand:#4B4FA8;--brand-soft:#E3E3F5;--accent:#C9733A;--now:#D0563E;
+  --line:#D9D5CD;--focus:#C9733A;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101223;--surface:#191C31;--surface-2:#22263F;
+  --ink:#ECEDF6;--ink-2:#C3C5D8;--muted:#9C9FB6;
+  --brand:#AEB2F4;--brand-soft:#2A2E57;--accent:#EBA772;--now:#FF8A72;
+  --line:#30344F;--focus:#EBA772;
+}}
+:root[data-theme="dark"]{
+  --bg:#101223;--surface:#191C31;--surface-2:#22263F;
+  --ink:#ECEDF6;--ink-2:#C3C5D8;--muted:#9C9FB6;
+  --brand:#AEB2F4;--brand-soft:#2A2E57;--accent:#EBA772;--now:#FF8A72;
+  --line:#30344F;--focus:#EBA772;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:800 20px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:28px;height:28px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:800 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:16px;padding:16px 18px;margin:24px 0}
+.callout p{margin:0;color:var(--ink)}
+.summary{background:var(--brand-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:700 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Dayglide home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="6" width="22" height="5.5" rx="2.75" fill="var(--brand)"/><rect x="5" y="13.25" width="16" height="5.5" rx="2.75" fill="var(--accent)"/><rect x="5" y="20.5" width="10" height="5.5" rx="2.75" fill="var(--brand)" opacity=".55"/><circle cx="25" cy="23.25" r="2.6" fill="var(--now)"/></svg>
+    Dayglide
+  </a>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p>Questions, bugs or ideas? Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. We read every message and usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+  <details><summary>How do I add a block?</summary><p>On Today, tap “Add a block”, give it a name, then pick a time and length. Tap a dashed “Free time” row to add a block in that gap.</p></details>
+  <details><summary>How do I start the timer?</summary><p>Tap any block to open Focus, then tap “Start timer”. A block that is happening right now counts down on its own.</p></details>
+  <details><summary>How do repeating routines work?</summary><p>Open a routine and choose the days under “Repeat on”. On those days it’s added to your timeline automatically. If you remove it from a day, it won’t come back that day.</p></details>
+  <details><summary>I’m not getting reminders</summary><p>Check Settings → Reminders in Dayglide, then make sure notifications for Dayglide are allowed in your phone’s settings. Focus modes and battery savers can also delay notifications.</p></details>
+  <details><summary>How do I restore my purchase on a new phone?</summary><p>Sign in with the same Apple ID or Google account, then go to Settings → Restore purchases. Your plan itself stays on the old device unless you exported it or your device backup includes it.</p></details>
+  <details><summary>How do I cancel Plus?</summary><p>On iPhone: Settings → your name → Subscriptions → Dayglide. On Android: Google Play → Payments &amp; subscriptions → Subscriptions → Dayglide. Cancel at least 24 hours before renewal.</p></details>
+  <details><summary>How do I delete my data?</summary><p>Settings → Your data → Delete everything. We hold no copy of your plan, so this deletes it completely.</p></details>
+
+  <div class="callout"><p>Dayglide is a planning tool, not a medical device. If you need help with ADHD or your health, please talk to a qualified professional.</p></div>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

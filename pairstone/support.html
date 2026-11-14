@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pairstone Support</title>
+<meta name="description" content="Help with Pairstone: how to play, the Daily board, restoring your purchase, refunds and accessibility.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23222A55'/%3E%3Crect x='9' y='6' width='15' height='20' rx='3' fill='%23B5A68D'/%3E%3Crect x='7.5' y='4.5' width='15' height='20' rx='3' fill='%23FBF8F2'/%3E%3Ccircle cx='15' cy='14.5' r='3.4' fill='%23A63E25'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --bg:#F3EFE8;--surface:#FFFFFF;--surface-2:#EAE4DA;
+  --ink:#1B1E2B;--ink-2:#3A3F52;--muted:#5C6070;
+  --accent:#34407C;--clay:#9A4A2B;--clay-soft:#F3DFD3;
+  --line:#DAD3C7;--focus:#34407C;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12141B;--surface:#1B1E28;--surface-2:#242836;
+  --ink:#EEEDF2;--ink-2:#C8CAD6;--muted:#9A9DAE;
+  --accent:#AEB8F2;--clay:#EBA27F;--clay-soft:#3B2A22;
+  --line:#2E3242;--focus:#AEB8F2;
+}}
+:root[data-theme="dark"]{
+  --bg:#12141B;--surface:#1B1E28;--surface-2:#242836;
+  --ink:#EEEDF2;--ink-2:#C8CAD6;--muted:#9A9DAE;
+  --accent:#AEB8F2;--clay:#EBA27F;--clay-soft:#3B2A22;
+  --line:#2E3242;--focus:#AEB8F2;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font:700 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.stone{width:28px;height:34px;position:relative;display:inline-block}
+.stone::before{content:"";position:absolute;inset:4px 0 0 3px;border-radius:7px;background:#B5A68D}
+.stone span{position:absolute;inset:0 3px 4px 0;border-radius:7px;background:#FBF8F2;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
+.stone span::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#A63E25}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:700 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.02em;margin:24px 0 8px}
+h2{font:700 22px/1.25 var(--f-display);margin:40px 0 8px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--clay-soft);border-radius:16px;padding:4px 20px 12px;margin:24px 0}
+.summary li{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.card p{margin:4px 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-display);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="stone" aria-hidden="true"><span></span></span>Pairstone</a>
+  <nav aria-label="Site"><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a></nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="meta">Help with Pairstone for iPhone, iPad and Android</p>
+
+<div class="card">
+  <p><strong>Email us:</strong> <a href="mailto:wael.rooma@gmail.com?subject=Pairstone%20support">wael.rooma@gmail.com</a></p>
+  <p>Please tell us your device model and the app version from the bottom of Settings. We usually reply within two working days.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<details>
+  <summary>How do I play?</summary>
+  <p>Tap two identical tiles to clear them. You can only pick a tile that is free: nothing is resting on top of it, and its left or right side is open. Tiles that are blocked right now are faded (you can turn this off in Settings). Clear every tile to finish the board.</p>
+</details>
+
+<details>
+  <summary>Can every board really be cleared?</summary>
+  <p>Yes. Every board is dealt by working backwards from a full winning order, so a complete solution always exists when the board starts. Your own choices can still lead to a dead end, which is part of the puzzle. Undo is unlimited, Hint looks ahead for a move that keeps the board winnable, and Shuffle re-deals the remaining tiles into a solvable order.</p>
+</details>
+
+<details>
+  <summary>What is the Daily board?</summary>
+  <p>A new board each day, the same deal for everyone who plays that day. Clearing it on consecutive days builds your streak. The Daily board is free forever.</p>
+</details>
+
+<details>
+  <summary>I bought Pairstone Premium on another device. How do I get it back?</summary>
+  <p>Sign in to the same Apple ID or Google account. Then go to Settings → Purchase → Restore purchase, or tap Restore on the Premium screen. A purchase made through Apple doesn't carry over to Google, or the other way round.</p>
+</details>
+
+<details>
+  <summary>How do I get a refund?</summary>
+  <p>Apple and Google handle all refunds. For Apple, go to reportaproblem.apple.com. For Google, go to play.google.com, open Order history and request a refund.</p>
+</details>
+
+<details>
+  <summary>Can I move my progress to a new phone?</summary>
+  <p>Your progress is stored only on your device, because there is no account. A full device backup and restore through iCloud or Google usually brings it across. You can always restore the purchase, even if your progress doesn't come across.</p>
+</details>
+
+<details>
+  <summary>Accessibility options</summary>
+  <p>Settings has Reduce motion (it also follows your system setting), Fade blocked tiles, and switches for sound and haptics. Text follows your system text size. Every tile is labelled for VoiceOver and TalkBack with its name and whether it is free, and every tile face has its own shape, so colour is never the only clue.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Settings → Reset progress erases your progress on this device, and deleting the app removes everything it stored. We keep no gameplay data on any server. See the <a href="privacy">Privacy Policy</a>.</p>
+</details>
+</main>
+<footer><a href="privacy">Privacy</a><a href="terms">Terms</a><a href="support">Support</a> © 2026 Wael Rooma</footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stillpage Support</title>
+<meta name="description" content="Help with Stillpage: passcodes, streaks, backups and subscriptions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;--f-body:"Manrope",system-ui,sans-serif;
+  --bg:#F5F3EE;--surface:#FFFFFF;--ink:#161B1D;--ink-2:#434B4F;--muted:#5C6569;
+  --brand:#1F5A63;--brand-soft:#DCEBEC;--warm:#8F5A12;--line:#DAD6CD;--focus:#8F5A12;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1416;--surface:#182023;--ink:#E9ECEA;--ink-2:#B9C1C0;--muted:#96A0A0;
+  --brand:#8CCBD3;--brand-soft:#1E3B40;--warm:#E8B867;--line:#2C373B;--focus:#E8B867;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1416;--surface:#182023;--ink:#E9ECEA;--ink-2:#B9C1C0;--muted:#96A0A0;
+  --brand:#8CCBD3;--brand-soft:#1E3B40;--warm:#E8B867;--line:#2C373B;--focus:#E8B867;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font:600 21px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 23px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:700 17px/1.4 var(--f-body);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary h2{color:var(--ink)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--ink);font-weight:700}
+td{color:var(--ink-2)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:4px 20px 16px;margin:16px 0}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Stillpage home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="var(--brand)"/><path d="M10 7.5h8.5l4 4V24.5H10z" fill="var(--bg)"/><path d="M18.5 7.5v4h4" fill="var(--brand-soft)"/><path d="M12.8 15h7M12.8 18h7M12.8 21h4.2" stroke="var(--brand)" stroke-width="1.4" stroke-linecap="round"/></svg>Stillpage</a>
+  <nav aria-label="Site"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We usually reply within two working days: <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a></p>
+
+  <h2>Common questions</h2>
+  <div class="card">
+    <h3>Where are my entries stored?</h3>
+    <p>Only on your phone, inside the app. There is no account and no cloud. Your phone's own iCloud or Google backup may include them if backup is on.</p>
+    <h3>I forgot my passcode. Can you reset it?</h3>
+    <p>No. We never receive your passcode or your entries, so there is nothing we can reset. On the lock screen, "Forgot passcode?" lets you erase the journal on this device and start fresh. Export regularly with Plus if you want a copy.</p>
+    <h3>How do streaks work?</h3>
+    <p>A streak counts calendar days with at least one entry. It stays alive until the end of the day after your last entry, so it is never broken before your day is over.</p>
+    <h3>Does Stillpage use AI?</h3>
+    <p>No. Every prompt is written by people and ships with the app. Nothing you write is analysed.</p>
+    <h3>How do I move my journal to a new phone?</h3>
+    <p>Restore the new phone from a device backup, or export a JSON backup and Markdown copy with Plus before you switch.</p>
+    <h3>How do I cancel Plus?</h3>
+    <p>On iPhone: Settings → your name → Subscriptions. On Android: Google Play → Payments and subscriptions → Subscriptions. Your entries stay when Plus ends.</p>
+    <h3>Restore purchases</h3>
+    <p>Open Settings → Stillpage Plus → Restore purchases, signed in with the same Apple ID or Google account you used to subscribe.</p>
+  </div>
+
+  <h2>If you are struggling</h2>
+  <p>Stillpage is a journal, not a mental health service. If you are going through a hard time, please reach out to someone you trust or a qualified professional. If you feel unsafe, contact your local emergency number now.</p>
+</main>
+<footer><a href="/privacy">Privacy</a><a href="/terms">Terms of use</a><a href="/support">Support</a>© 2026 Wael Rooma</footer>
+</body>
+</html>

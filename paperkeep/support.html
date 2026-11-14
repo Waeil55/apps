@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Paperkeep Support</title>
+<meta name="description" content="Help with scanning, expiry reminders, PDF export, the passcode lock and Paperkeep Plus.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --f-display:"Fraunces",Georgia,serif;--f-body:"Inter",system-ui,sans-serif;
+  --bg:#F6F4EF;--surface:#FFFFFF;--surface-2:#ECE8DF;--ink:#1A1D21;--ink-2:#3D434B;--muted:#5C636D;
+  --brand:#14596B;--brand-soft:#DCEBEE;--line:#DCD6CA;--focus:#14596B;--amber:#E2A33B;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101315;--surface:#1A1E21;--surface-2:#252B2F;--ink:#ECEFF1;--ink-2:#C3CACF;--muted:#9CA5AC;
+  --brand:#7FC8D8;--brand-soft:#173840;--line:#333B41;--focus:#7FC8D8;
+}}
+:root[data-theme="dark"]{
+  --bg:#101315;--surface:#1A1E21;--surface-2:#252B2F;--ink:#ECEFF1;--ink-2:#C3CACF;--muted:#9CA5AC;
+  --brand:#7FC8D8;--brand-soft:#173840;--line:#333B41;--focus:#7FC8D8;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body)}
+a{color:var(--brand);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+header.top{max-width:760px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font:600 22px/1 var(--f-display);color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:16px;color:var(--ink-2);font-size:15px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+h1{font:600 clamp(32px,6vw,44px)/1.1 var(--f-display);letter-spacing:-.01em;margin:24px 0 8px}
+h2{font:600 23px/1.25 var(--f-display);margin:40px 0 8px}
+h3{font:600 18px/1.3 var(--f-display);margin:24px 0 4px}
+p,li{color:var(--ink-2);max-width:66ch}
+.meta{color:var(--muted);font-size:15px}
+.summary{background:var(--brand-soft);border-radius:18px;padding:4px 20px 12px;margin:24px 0}
+.summary li,.summary p{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 20px;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-body);font-weight:600;color:var(--ink)}td{color:var(--ink-2)}
+.table-wrap{overflow-x:auto}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 18px;margin:10px 0}
+summary{cursor:pointer;font:600 17px/1.4 var(--f-body);padding:12px 0;min-height:44px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer a{color:var(--muted);margin-right:16px}
+@media (max-width:480px){nav a{margin-left:0;margin-right:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Paperkeep home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#14596B"/><path d="M10 6.5h8.5l4.5 4.5v14a1.5 1.5 0 0 1-1.5 1.5h-11.5A1.5 1.5 0 0 1 8.5 25V8A1.5 1.5 0 0 1 10 6.5z" fill="#FBFAF6"/><path d="M18.5 6.5V11H23" fill="#D9D3C4"/><rect x="11.5" y="14" width="9" height="1.6" rx=".8" fill="#9AA6AA"/><rect x="11.5" y="17.5" width="6.5" height="1.6" rx=".8" fill="#9AA6AA"/><rect x="8.5" y="21" width="14.5" height="4" fill="#E2A33B"/></svg>
+    Paperkeep
+  </a>
+  <nav aria-label="Site"><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</header>
+<main>
+
+<h1>Support</h1>
+<p>Questions, a bug, or an idea? Email <a href="mailto:wael.rooma@gmail.com">wael.rooma@gmail.com</a>. We usually reply within two working days. Please include your phone model and app version (Settings, at the bottom). Never send us copies of your documents.</p>
+<h2>Common questions</h2>
+<details><summary>How do I scan a document?</summary><p>Tap <strong>Scan a document</strong>. On iPhone and most Android phones the system scanner opens, finds the edges and straightens the page. Scan as many pages as you need, then tap Save, give the document a name and, if you like, tags and an expiry date.</p></details>
+<details><summary>Can I add photos I already took?</summary><p>Yes. Tap the photo button next to Scan, or "Add pages" on a document, and pick the photos. Only the photos you choose are copied into Paperkeep.</p></details>
+<details><summary>How do expiry reminders work?</summary><p>Add an expiry date and keep "Remind me" on. Paperkeep schedules a notification on your phone before the date (30 days by default; change it in Settings) and on the day itself, at 9:00. If you turned notifications off for Paperkeep, turn them back on in your phone’s Settings.</p></details>
+<details><summary>How do I share a document?</summary><p>Open it and tap <strong>Share as PDF</strong>. The PDF is made on your phone and your share sheet opens, so you can email it, save it to Files or print it.</p></details>
+<details><summary>Where are my documents stored? Is there a backup?</summary><p>Only on your device, in Paperkeep’s private storage. There is no Paperkeep cloud. Your phone’s own backup (iCloud or Google) may include the app’s data depending on your settings. If you delete the app without a backup, the documents are gone and we cannot recover them.</p></details>
+<details><summary>I forgot my passcode</summary><p>For your privacy the passcode cannot be recovered or reset by us. The only way back in is to delete and reinstall the app, which erases the vault (unless you restore a device backup).</p></details>
+<details><summary>What does Paperkeep Plus add?</summary><p>Unlimited documents (free keeps up to 15), folders, and the passcode lock. Scanning, tags, search, expiry reminders and PDF export are free.</p></details>
+<details><summary>How do I cancel or restore Plus?</summary><p>Cancel in your App Store or Google Play subscriptions. To restore on a new phone, open Settings → Restore purchases while signed in to the same store account.</p></details>
+<details><summary>How do I delete everything?</summary><p>Settings → Delete all data, or simply uninstall the app.</p></details>
+</main>
+<footer>© 2026 Wael Rooma · <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></footer>
+</body>
+</html>
